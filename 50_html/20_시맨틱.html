@@ -10,15 +10,37 @@
     <!-- 위아래 위치변경: alt+방향키(위/아래) -->
     <h1>레이아웃 구성</h1>
     <h2>HTML5의 시맨틱(의미있는태그)</h2>
-    <header>헤더</header>
+    <header>
+        <!-- header안에 header, footer은 사용할수 없다. -->
+        <!-- <header>헤더</header> -->
+        <section><h2>섹션</h2></section>
+        <!-- <footer>푸터</footer> -->
+    </header>
     <nav>내비</nav>
     <main>메인</main>
-    <section>섹션</section>
-    <article>아티클</article>
+    <section><h2>섹션</h2></section>
+    <article><h2>아티클</h2></article>
     <aside>사이드</aside>
     <footer>푸터</footer>
 
+    <header>헤더</header>
+    <nav>내비</nav>
+    <!-- <main>메인</main> -->
+    <!-- main태그는 본문에 1번만 사용하기!! -->
+    <!-- section, article은 하나이상의 제목을 반드시 포함하기!! -->
+    <section><h2>섹션</h2></section>
+    <article><h2>아티클</h2></article>
+    <aside>사이드</aside>
+    <footer>
+       <!-- footer 안에 header, footer은 사용할수 없다. -->
+        <!-- <header>헤더</header> -->
+        <article><h2>아티클</h2></article>
+        <!-- <footer>푸터</footer> -->
+    </footer>
+
     <h2>HTML5 이전</h2>
-    <div>분할</div>
+    <div>
+        <div>분할</div>
+    </div>
 </body>
 </html>
