@@ -45,7 +45,7 @@ WHERE I WORK
 Phone: 010-1234-5678
 Email: wireframe@hanmail.net
 
-아래 양식에 메모 또는 메일 주시면 연락드리겠습니다.:
+전화 주시거나 메일 주시면 연락드리겠습니다:
 
 이름
 이메일
