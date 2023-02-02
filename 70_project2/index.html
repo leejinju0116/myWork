@@ -15,40 +15,50 @@
         <!-- 로고 -->
         <h1><a href="#"><b>BR</b> Architects</a></h1>
         <!-- GNB: Gloval Navigation Bar -->
-        <ul>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contack</a></li>
-        </ul>
+        <nav>
+            <ul>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contack</a></li>
+            </ul>
+        </nav>
     </header> <!--  /헤더 -->
 
     <!-- 섹션1 -->
     <section>
-        <img src="images/Architecture.jpg" alt="건물 이미지">
+        <div><img src="images/Architecture.jpg" alt="Architecture"></div>
         <h2><b>BR</b> Architects</h2>
     </section> <!-- /섹션1 -->
 
     <!-- 섹션2 -->
     <section>
         <h2>Projects</h2>
-        <div></div>
-        <div><img src="images/pj_summerHouse.jpg" alt="Summer House 이미지1"></div>
-        <h3>Summer House</h3>
-        <div><img src="images/pj_brickHouse.jpg" alt="Brick House 이미지2"></div>
-        <h3>Brick House</h3>
-        <div><img src="images/pj_renovated.jpg" alt="Renovated 이미지3"></div>
-        <h3>Renovated</h3>
-        <img src="images/pj_barnHouse.jpg" alt="Barn House 이미지4">
-        <h3>Barn House</h3>
-        <div><img src="images/pj_brickHouse.jpg" alt="Summer House 이미지5"></div>
-        <h3>Summer House</h3>
-        <div><img src="images/pj_summerHouse.jpg" alt="Brick House 이미지6"></div>
-        <h3>Brick House</h3>
-        <div><img src="images/pj_barnHouse.jpg" alt="Renovated 이미지7"></div>
-        <h3>Renovated</h3>
-        <div><img src="images/pj_renovated.jpg" alt="Barn House 이미지8"></div>
-        <h3>Barn House</h3>
-        </div>
+        <ul>
+            <li>
+                <div><img src="images/pj_summerHouse.jpg" alt="Summer House 이미지1"></div><h3>Summer House</h3>
+            </li>
+            <li>
+                <div><img src="images/pj_brickHouse.jpg" alt="Brick House 이미지2"></div><h3>Brick House</h3>
+            </li>
+            <li>
+                <div><img src="images/pj_renovated.jpg" alt="Renovated 이미지3"></div><h3>Renovated</h3>
+            </li>
+            <li>
+                <div><img src="images/pj_barnHouse.jpg" alt="Barn House 이미지4"></div><h3>Barn House</h3>
+            </li>
+            <li>
+                <div><img src="images/pj_brickHouse.jpg" alt="Summer House 이미지5"></div><h3>Summer House</h3>
+            </li>
+            <li>
+                <div><img src="images/pj_summerHouse.jpg" alt="Brick House 이미지6"></div><h3>Brick House</h3>
+            </li>
+            <li>
+                <div><img src="images/pj_barnHouse.jpg" alt="Renovated 이미지7"></div><h3>Renovated</h3>
+            </li>
+            <li>
+                <div><img src="images/pj_renovated.jpg" alt="Barn House 이미지8"></div><h3>Barn House</h3>
+            </li>
+        </ul>
     </section> <!-- /섹션2 -->
 
     <!-- 섹션3 -->
@@ -60,47 +70,49 @@
             anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
             aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
             consequat.</p>
-        <div>
-            <div>
+        <ul>
+            <li>
                 <div><img src="images/John.jpg" alt="john Doe"></div>
                 <h3>John Doe</h3>
                 <P>CEO & Founder</P>
                 <P>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</P>
                 <div><a href="#">Contact버튼</a></div>
-            </div>
-            <div>
+            </li>
+            <li>
                 <div><img src="images/Jane.jpg" alt="Jane Doe"></div>
                 <h3>Jane Doe</h3>
                 <P>Architect</P>
                 <P>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</P>
                 <div><a href="#">Contact버튼</a></div>
-            </div>
-            <div>
+            </li>
+            <li>
                 <div><img src="images/Mike.jpg" alt="Mike Ross"></div>
                 <h3>Mike Ross</h3>
                 <P>Architect</P>
                 <P>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</P>
                 <div><a href="#">Contact버튼</a></div>
-            </div>
-            <div>
+            </li>
+            <li>
                 <div><img src="images/Dan.jpg" alt="Dan Star"></div>
                 <h3>Dan Star</h3>
                 <P>Architect</P>
                 <P>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</P>
                 <div><a href="#">Contact버튼</a></div>
-            </div>
-        </div>
+            </li>
+        </ul>
     </section> <!-- /섹션3 -->
 
     <!-- 섹션4 -->
     <section>
         <h2>Contact</h2>
         <p>Lets get in touch and talk about your next project.</p>
-        <div>Name</div>
-        <div>Email</div>
-        <div>Subject</div>
-        <div>Comment</div>
-        <div>SEND MESSAGE</div>
+        <form action="message.php" mehtod="post">
+            <input type="text" placeholder="Name" name="user_name">
+            <input type="email" placeholder="Email" name="user_email">
+            <input type="text" placeholder="Subject" name="user_subject">
+            <input type="text" placeholder="Comment" name="user_comment">
+            <input type="summit" value="send message" >
+        </form>
         <div><img src="images/map.jpg" alt="지도이미지"></img></div>
     </section> <!-- /섹션4 -->
 
