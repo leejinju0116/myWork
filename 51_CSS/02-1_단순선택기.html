@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS</title>
+    <style>
+        html {color: red;}
+        body {color: red;}
+        h1 {color: red;}
+        h2 {color: red;}
+        ul {color: red;}
+        li {color: red;}        
+        
+        /* 그룹 선택기:, 
+        선택기1, 선택기2, ...
+        */
+        html, body, h1, h2, ul, li {
+            color: red;
+        }
+
+        /* 범용(전체) 선택기 */
+        /* margin, padding, box-sizing은 가능한 사용을 자제하는것이 좋다.
+        왜냐하면 웹브라우저가 쓸데없이 데이터를 읽는 시간을 줄일수있다 */
+        * {
+            color:red;
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>선택기</h1>
+    <h2>단순 선택기</h2>
+    <ul>
+        <li>요소</li>
+        <li>id</li>
+        <li>class</li>
+        <li>그룹</li>
+        <li>범용</li>
+    </ul>
+</body>
+</html>
