@@ -1,14 +1,10 @@
 다이소 리뉴얼 프로젝트
 Benchmarking
 
-호습:
-https://thehosb.com/
-홈페이지열릴때 로고화면이 나왔다가 로고가 사라지고 홈페이지에 들어가지는 형태이다.
 
 한솔VHOM:
 https://www.vhom.co.kr/
 내비게이션바가 사용되었고, 사용자가 마우스를 올리기전에는 고스트형태였다가 서브메뉴에 마우스를 올리면 해당항목만 나오는형태이다.
-
 
 닥터지:
 https://www.dr-g.co.kr/main#none
@@ -21,10 +17,10 @@ http://www.nongshimtk.com/main.do
 스와로브스키 코리아:
 https://www.swarovski.com/ko-KR/
 카테고리별로 나눠져있는 형태로 마우스를 올리면 썸네일이 확대되는 특징이있다.
-
-투비소프트:
-https://www.tobesoft.com/main#
-스크롤시 배경이미지는 고정되는 페럴렉스기법을 사용하였다.
+ 
+커피그루나루:
+https://coffine.co.kr/
+신메뉴와 베스트메뉴를 썸네일로 나눠놨고 클릭하면 다른사이트로 들어가지는 형태이다.
 
 파스쿠찌:
 https://www.caffe-pascucci.co.kr/
