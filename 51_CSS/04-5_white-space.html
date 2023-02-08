@@ -6,19 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML+CSS</title>
     <style>
+        /* 자동줄바꿈-O, Enter(강제줄바꿈)-X, space와 tab-X */
         .p1 {white-space: normal;}
-        /* wrap은 줄바꿈, nowrap은 자동줄바꿈안됨 */
-        .p2 {white-space: nowrap;}
-        /* pre 자동줄바꿈 안됨 */
-        .p3 {white-space: pre;}
 
+        /* wrap은 줄바꿈이란 의미 */
+
+        /* 자동줄바꿈-X, Enter(강제줄바꿈)-X, space와 tab-X */
+        .p2 {white-space: nowrap;}
+        /* 자동줄바꿈-X, Enter(강제줄바꿈)-O, space와 tab-O  */
+        .p3 {white-space: pre;}
+        /* 자동줄바꿈-O, Enter(강제줄바꿈)-O, space와 tab-O */
         .p4 {white-space: pre-wrap;}
+        /* 자동줄바꿈-O, Enter(강제줄바꿈)-O, space와 tab-X */
         .p5 {white-space: pre-line;}
     </style>
 </head>
 <body>
     <h1>CSS 텍스트 속성</h1>
     <h2>white-space(빈공간,여백)</h2>
-    <p class="p1">Lorem ipsum dolor sit. Lorem ipsum dolor sit. Lorem ipsum dolor sit. Lorem ipsum dolor sit. Lorem ipsum dolor sit. Lorem ipsum dolor sit. Lorem ipsum dolor sit. Lorem ipsum dolor sit. Lorem ipsum dolor sit. Lorem ipsum dolor sit. Lorem ipsum dolor sit. Lorem ipsum dolor sit. Lorem ipsum dolor sit. Lorem ipsum dolor sit.   </p>
-</body>
+    <p class="p1">Lorem           ipsum dolor sit. Lorem ipsum dolor sit. 
+        Lorem                    ipsum dolor sit. Lorem ipsum dolor sit. 
+        Lorem ipsum dolor sit. Lorem ipsum dolor sit.
+        Lorem ipsum dolor sit. </p>
+    <p class="p2">Lorem           ipsum dolor sit. Lorem ipsum dolor sit. 
+        Lorem                    ipsum dolor sit. Lorem ipsum dolor sit. 
+        Lorem ipsum dolor sit. Lorem ipsum dolor sit.
+        Lorem ipsum dolor sit. </p>
+    <p class="p3">Lorem           ipsum dolor sit. Lorem ipsum dolor sit. 
+        Lorem                    ipsum dolor sit. Lorem ipsum dolor sit. 
+        Lorem ipsum dolor sit. Lorem ipsum dolor sit.
+        Lorem ipsum dolor sit. </p>
+    <p class="p4">Lorem           ipsum dolor sit. Lorem ipsum dolor sit. 
+        Lorem                    ipsum dolor sit. Lorem ipsum dolor sit. 
+        Lorem ipsum dolor sit. Lorem ipsum dolor sit.
+        Lorem ipsum dolor sit. </p>
+    <p class="p5">Lorem           ipsum dolor sit. Lorem ipsum dolor sit. 
+        Lorem                    ipsum dolor sit. Lorem ipsum dolor sit. 
+        Lorem ipsum dolor sit. Lorem ipsum dolor sit.
+        Lorem ipsum dolor sit. </p>
+
+        
 </html>
