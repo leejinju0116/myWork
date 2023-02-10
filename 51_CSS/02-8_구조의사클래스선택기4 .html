@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS</title>
+    <style>
+        /* 
+            선택기:first-child
+            선택기:nth-child(n)
+            선택기:last-child
+            선택기:nth-last-child(n) 아래부터 순서 거꾸로
+            선택기:only-child 요소가 하나일때
+            n: 1,2,3,4,5... odd(홀수), even(짝수), 2n+1, 2n, 3n...
+        */
+
+        h1:first-child {color:red;}
+        p:last-child {color:red;}
+
+        /* p:nth-child(1) {color:blue;} */
+        /* p:nth-child(12) {color:blue;} */
+        p:nth-last-child(1) {color:blue;}
+    </style>
+</head>
+<body>
+    <h1>선택기</h1>
+    <h2>~child~</h2>
+    <p>1번째 요소입니다.</p>
+    <p>2번째 요소입니다.</p>
+    <p>3번째 요소입니다.</p>
+    <p>4번째 요소입니다.</p>
+    <p>5번째 요소입니다.</p>
+    <p>6번째 요소입니다.</p>
+    <p>7번째 요소입니다.</p>
+    <p>8번째 요소입니다.</p>
+    <p>9번째 요소입니다.</p>
+    <p>10번째 요소입니다.</p>
+    <p>11번째 요소입니다.</p>
+    <p>12번째 요소입니다.</p>
+</body>
+</html>

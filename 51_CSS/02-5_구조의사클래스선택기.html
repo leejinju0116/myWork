@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS</title>
+    <style>
+
+        /* 
+        :nth-of-type(n)
+        n은 숫자
+        */
+        /* 첫번째 p선택 */
+        p:nth-of-type(1) {color:red;}
+        /* 두번째 p */
+        p:nth-of-type(2) {color:orange;}
+        /* 세번째 p */
+        p:nth-of-type(3) {color:yellow;}        
+        /* 네번째 p */
+        p:nth-of-type(4) {color:green;}
+
+        /* 
+        :nth-of-type(n) ->타입을 구분한다
+        :nth-cild(n) -> 타입을 구분하지않는다.
+        n: 1,2,3,4,5... odd, even, 2n+1, 2n, ....
+        */
+        p:nth-child(3) {background-color:green;}
+        p:nth-child(4) {background-color:yellow;}
+        p:nth-child(5) {background-color:orange;}
+        p:nth-child(6) {background-color:red;}
+
+    </style>
+</head>
+<body>
+    <h1>첫째, h1 중에 첫째</h1>
+    <h2>둘쨰, h2 중에 첫째</h2>
+    <p>셋째이다. p중에 첫째</p>
+    <p>넷째이다. p중에 둘째</p>
+    <p>다섯째이다. p중에 셋째</p>
+    <p>여섯째이다. p중에 넷째</p>
+</body>
+</html>

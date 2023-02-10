@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS</title>
+    <style>
+        /* 
+            링크태그는 기본파란색
+            :link (방문전)- 파란색(기본색상)
+            :visited (방문후)- 보라색
+            :hover (마우스 올린경우)- 파란색
+            :active (마우스 눌린경우)- 빨간색
+
+            순서= :link -> :visited -> :hover -> :active순으로 기록해야한다.
+         */
+        
+        /* a:link {color:red;}
+        a:visited {color:gray;}
+        a:hover {color:orange;}
+        a:active {color:olive;} */
+        
+        /* 네이버웹사이트의 경우 */
+        a {
+            color:#999;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color:#333;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>선택기</h1>
+    <h2>링크 의사 선택기</h2>
+    <a href="#">링크</a>
+    <a href="http://www.naver.com">네이버</a>
+</body>
+</html>
