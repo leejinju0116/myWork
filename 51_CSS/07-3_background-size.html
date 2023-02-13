@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS</title>
+    <style>
+        div {
+            width: 700px;
+            height:350px;
+            border: 1px solid red;
+            margin: 20px;
+        }
+
+        /*  배경이미지 크기 
+        background-size: w(너비,폭) h(높이)
+        단위: px(em,rem), % 
+        너비/높이: auto, cover, contain
+        cover: 이미지가 일부 잘릴수있으나 가득채움
+        contain: 이미지는 잘리지 않으나, 빈공간이 생길수 있음
+        */
+
+        div {
+            background-image: url(assets/House.jpg);
+            background-repeat: no-repeat;
+        }
+        /* 숫자 0만 단위 생략가능 */
+        /* 숫자로 단위쓴경우는 하나만 쓰면 x위치를 말하고 y위치는 가운데로 설정된다. */
+        .div1 {background-size: auto;}
+        .div2 {background-size: cover;}
+        .div3 {background-size: contain;}
+        .div4 {background-size: 500px 333px;}
+        .div5 {background-size: 500px;}
+        /* %s는 이미지 배경이 들어가는 박스가 기준 */
+        .div6 {background-size: 100% 100%;}
+        .div7 {background-size: 100%;}
+    </style>
+</head>
+<body>
+    <h1>배경</h1> 
+    <h2>배경이미지 사이즈</h2>
+    <div class="div1">auto</div>
+    <div class="div2">cover</div>
+    <div class="div3">contain</div>
+    <div class="div4">500px 333px</div>
+    <div class="div5">500px</div>
+    <div class="div6">100% 100%</div>
+    <div class="div7">100%</div>
+</body>
+</html>
