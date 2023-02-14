@@ -7,8 +7,7 @@
     <title>HTML+CSS</title>
     <style>
         div {
-            width: 350px;
-            height:350px;
+            height:800px;
             border: 1px solid red;
             margin: 20px;
         }
@@ -20,16 +19,26 @@
         fixed: 배경이미지가 고정된다.
         */
 
-        div {
-            background-image: url(assets/House.jpg);
+        .div1 {
+            background-image: url(assets/parallax1.jpg);
             background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-size:cover;
+            background-attachment: fixed;
+
+            /* background: URL 반복 위치/크기 고정; */
+            background: url(assets/parallax1.jpg) no-repeat cover fixed;
         }
         
     </style>
 </head>
 <body>
     <h1>배경</h1> 
-    <h2>배경이미지 고정여부</h2>
-    <div class="div1">텍스트</div>
+    <h2>패럴랙스 스크롤</h2>
+    <div class="div1">배경 이미지 고정 여부</div>
+    <div class="div2">
+        <h3>콘텐츠의 제목</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore quas nemo nobis dolorum! Architecto nesciunt, culpa minus laboriosam quam officia optio voluptatum repellat unde amet cupiditate, incidunt maxime voluptas maiores.</p>
+    </div>
 </body>
 </html>

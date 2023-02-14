@@ -6,14 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>이진주</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <!-- shift+alt+F: 자동들여쓰기(정렬) -->
+    <!-- 헤더  -->
     <header>
         <nav>
-            <!-- ctrl+alt+아래방향키: 다중 커서 (세로) -->
-            <!-- alt+클릭: 다중커서 (세로) -->
             <ul>
                 <li><a href="#">HOME</a></li>
                 <li><a href="#">ABOUT</a></li>
@@ -21,11 +20,15 @@
                 <li><a href="#">CONTACT</a></li>
             </ul>
         </nav>
-    </header>
+    </header> <!-- //헤더  -->
+
+    <!-- 섹션1  -->
     <section>
         <img src="images/parallax1.jpg" alt="나의 뒷모습(나와연관된 이미지)">
         <h1>Lee Jin Ju</h1>
-    </section>
+    </section><!-- //섹션1  -->
+
+    <!-- 섹션2  -->
     <section>
         <h3>ABOUT ME</h3>
         <p><em>I love Web Design</em></p>
@@ -67,7 +70,9 @@
                 </li>
             </ul>
         </div>
-    </section>
+    </section><!-- //섹션2  -->
+
+    <!-- 섹션3  -->
     <section>
         <div>
             <img src="images/parallax2.jpg" alt="작품이미지">
@@ -79,8 +84,6 @@
                 <em>클릭하면 큰 이미지로 볼 수 있습니다.</em>
             </p>
             <ul>
-                <!-- ctrl+alt+아래방향키: 커서선택 -->
-                <!-- shift+오른쪽방향키 -->
                 <li><img src="images/pf_bearCloseup.jpg" alt="BearClose up"></li>
                 <li><img src="images/pf_coffeeBeans.jpg" alt="Coffee Beans"></li>
                 <li><img src="images/pf_emptyGhostTrain.jpg" alt="Empty Ghost Train"></li>
@@ -92,7 +95,9 @@
             </ul>
             <a href="#">더보기</a>
         </div>
-    </section>
+    </section><!-- //섹션3  -->
+
+    <!-- 섹션4  -->
     <section>
         <div>
             <img src="images/parallax3.jpg" alt="연락관련 배경이미지">
@@ -108,7 +113,6 @@
                     Email: wireframe@hanmail.net</address>
             </div>
             <p>전화 주시거나 메일 주시면 연락드리겠습니다:</p>
-            <!-- 네임입력하기 -->
             <form action="message.php">
                 <input type="text" name="username" id="username" placeholder="이름">
                 <input type="email" name="useremail" id="useremail" placeholder="이메일">
@@ -116,14 +120,15 @@
                 <input type="submit" value="메시지전송하기">
             </form>
         </div>
-    </section>
+    </section><!-- //섹션4  -->
+
+    <!-- 푸터  -->
     <footer>
         <div>
-            <!-- #/#top은 현재 페이지의 최 상단을 가리킨다. -->
             <a href="#top">위로 가기</a>
             <p>Copyright 2023 LJJ. All rights reserved.</p>
         </div>
-    </footer>
+    </footer><!-- //푸터  -->
 </body>
 
 </html>
