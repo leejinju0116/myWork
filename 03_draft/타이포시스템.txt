@@ -1,23 +1,21 @@
 <타이포시스템>글꼴:LATO
 
 
-a →15PX, #777
-a:hover	→15px, #000000
+본문 body  →15PX, #777, 줄간격 1.8
 
 h1  →24px, #ffffff, 자간10px		(LEE JIN JU 로고)
 h2  →36px, #fff, 자간10px 		(PORTFOLIO / CONTACT)
 h3  →24PX, #777			(ABOUT ME  / MY WORK / WHERE I WORK)
 h4  →18PX, #777			(Im really good at:)
 
-
-본문 body  →15PX, #777, 줄간격 1.8
-
-span  →15PX, 자간10px		(Photoshop, Illustrator,HTML+CSS,JavaScript)
-퍼센트 →15px, #fff
-span  →숫자: 24px, #fff		(55+)
+a →15PX, #777777
+a:hover	→15px, #000000
 
 button 		 →15px, #000
 button 		 →15px, #fff
 button:hover	 →15px, #000
 
+span  →15PX, 자간10px		(Photoshop, Illustrator,HTML+CSS,JavaScript)
+퍼센트 →15px, #fff
+span  →숫자: 24px, #fff		(55+)
 address  →18px, #777, 줄간격1.8	(인천광역시 남동구)

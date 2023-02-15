@@ -1,12 +1,86 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&family=Noto+Sans+KR:wght@100;400;700&display=swap');
 
-a {font-size:15px; color:#777;}
-a:hover {color: #000;}
+/* font-family: 'Lato', sans-serif;
+font-family: 'Noto Sans KR', sans-serif; */
 
-h1 {font-size: 24px; color: #fff; letter-spacing: 10px; }
-h2 {font-size: 36px; color: #fff; letter-spacing: 10px;}
-h3 {font-size: 24px; color:#777; }
-h4 {font-size: 18px; color: #777;}
 
-body {font-size: 15px; color: #777; line-height:1.8;}
-span {letter-spacing: 10px;}
+/* 초기화 */
+li {
+    list-style-type: none;
+}
+
+a {
+    color: #777;
+    text-decoration: none;
+}
+
+button {
+    font-size: 1.5rem;
+    color: #000
+}
+
+/* 타이포 */
+/* rem은 html기준으로 변경됨, 계산하기쉽게 html 기본폰트는 10px로설정 */
+html {
+    font-size: 10px;
+}
+
+body {
+    font: 1.5rem/1.8 'Lato', 'Noto Sans KR', sans-serif;
+    color: #777;
+}
+
+h1 {
+    font-size: 2.4rem;
+    color: #fff;
+    letter-spacing: 1rem;
+}
+
+h2 {
+    font-size: 3.6rem;
+    color: #fff;
+    letter-spacing: 1rem
+}
+
+h3 {
+    font-size: 2.4rem;
+}
+
+h4 {
+    font-size: 1.8rem;
+}
+
+a:hover {
+    color: #000;
+}
+
+button {
+    font-size: 1.5rem;
+    color: #fff
+}
+
+button:hover {
+    color: #000
+}
+
+span {
+    letter-spacing: 1rem;
+}
+
+span {
+    font-size: 2.4rem;
+    color: #fff;
+}
+
+address {
+    font-size: 1.8rem;
+}
+
+/* 헤더 */
+.logo {text-align: center;}
+/* 섹션1 */
+/* 섹션2 */
+/* 섹션3 */
+/* 섹션4 */
+/* 푸터 */
