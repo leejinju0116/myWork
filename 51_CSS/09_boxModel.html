@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS</title>
+    <style>
+        /* width= auto, 100%, 안쓴거 다 같은사이즈  */
+        /* %는 부모크기가 기준 */
+        body {margin: 0;}
+
+        h1 {
+            background-color: green;
+            margin:0;
+        }
+        
+        .container {
+            background: red;
+            width: 50%;
+            /* height: 1000px; */
+        }
+        .container div {
+            background: yellow;
+            padding: 20px;
+            margin: 100px;
+            border: 10px solid black;
+        }
+        
+        
+
+        /* height= 콘텐츠(텍스트,이미지,요소)의 크기 기준 */
+        /* 
+        요소의 가로크기 auto는 100%
+        요소의 세로크기 auto는 콘텐츠크기(만약 콘텐츠가 없으면 0)
+        콘텐츠란? 텍스트 이미지 비디오, 요소
+         */
+        .div1 {width: 100%;}
+        .container .div2 {
+            width: 50%;
+            height: 50%;
+            margin: 30px;
+        }
+        .div3 {
+            width: 250px;
+            height: 300px;}
+    </style>
+</head>
+<body>
+    <h1>박스 모델</h1>
+    <div class="container">
+        <div class="div1">박스1: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia excepturi aperiam cumque tempora id. Accusantium perferendis asperiores illo debitis dolor mollitia dolores est, modi quos atque delectus nam, nemo deserunt!</div>
+        <div class="div2">박스2: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati quas, fugit dolores incidunt consequatur ipsam sequi! Fuga officiis ullam ea. Autem optio modi dignissimos laudantium perspiciatis, iure natus sint exercitationem?</div>
+        <div class="div3">박스3: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati quas, fugit dolores incidunt consequatur ipsam sequi! Fuga officiis ullam ea. Autem optio modi dignissimos laudantium perspiciatis, iure natus sint exercitationem?</div>
+    </div>
+</body>
+</html>

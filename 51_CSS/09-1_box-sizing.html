@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS</title>
+    <style>
+        div {
+            background-color: yellow;
+            width: 500px;
+            height: 150px;
+            padding: 20px;
+            border: 10px solid yellow; 
+        }
+
+        /* width:560px, height:210px */
+        /* width= width + padding*2 + border*2 */
+        /* =500 + 20*2 + 10*2 */
+        .div1 {box-sizing: content-box;}
+
+        /* width와 height크기에 border와 padding크기가 포함된다 */
+        /* width:500px, height:150px */
+        .div2 {box-sizing: border-box;}
+    </style>
+</head>
+<body>
+    <h1>박스 모델</h1>
+    <div class="div1">박스1: content-box</div>
+    <hr>
+    <div class="div2">박스2: border-box</div>
+</body>
+</html>
