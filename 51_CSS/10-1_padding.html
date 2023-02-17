@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS</title>
+    <style>
+        div {
+            width: 200px;
+            height: 150px;
+            background-color: violet;
+            margin: 20px;
+        }
+
+        .p1 {
+            padding-top: 10px;
+            padding-right: 20px;
+            padding-bottom: 30px;
+            padding-left: 40px;
+        }
+        .p2 {
+            /* 상 우 하 좌 */
+            padding: 10px 20px 30px 40px;
+        }
+
+        .p3 {
+            /* 상 좌우 하 */
+            padding: 10px 20px 30px;
+        }
+        .p4 {
+            /* 상하 좌우 */
+            padding: 10px 20px;
+        }
+        .p5 {padding: 10px;}
+        .p6 {
+            /* 음수지정 불가능 */
+            padding-left: 230px;
+            padding-top: -160px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>여백</h1>
+    <div class="p1">박스1</div>
+    <div class="p2">박스2</div>
+    <div class="p3">박스3</div>
+    <div class="p4">박스4</div>
+    <div class="p5">박스5</div>
+    <div class="p6">박스6</div>
+</body>
+</html>

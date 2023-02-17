@@ -1,0 +1,55 @@
+<타이포시스템> 
+
+글꼴:vardana, segoe ui, 
+
+
+로고,네비: 15px, 자간4px, 호버시: #ccc
+a(h1), li
+
+h2(BR) →36px, 자간 4px, #fff
+h2(Architects) →36px, 자간4px #f1f1f1
+
+h2 →24px, #000		(Projects / About / Contact)
+h3 →15px, #fff (Summer House / Brick House / Renovated / Barn House)
+h3 →24px, #000 	(John Doe/Mike Ross)
+
+p →15px, #000 	(ceo & founder)
+p → 15px, 줄간격 22.5px, #000 (섹션3-lorem, phasellus, 섹션4-Let)
+
+button 		 →15px, #000
+
+address →15px, #000
+footer →15px, #fff
+
+
+
+
+
+
+
+
+
+
+
+---------------------------------------------------------------------------
+<타이포시스템>글꼴:LATO
+
+
+본문 body  →15PX, #777, 줄간격 1.8
+
+h1  →24px, #ffffff, 자간10px		(LEE JIN JU 로고)
+h2  →36px, #fff, 자간10px 		(PORTFOLIO / CONTACT)
+h3  →24PX, #777			(ABOUT ME  / MY WORK / WHERE I WORK)
+h4  →18PX, #777			(Im really good at:)
+
+a →15PX, #777777
+a:hover	→15px, #000000
+
+button 		 →15px, #000
+button 		 →15px, #fff
+button:hover	 →15px, #000
+
+span  →15PX, 자간10px		(Photoshop, Illustrator,HTML+CSS,JavaScript)
+퍼센트 →15px, #fff
+span  →숫자: 24px, #fff		(55+)
+address  →18px, #777, 줄간격1.8	(인천광역시 남동구)

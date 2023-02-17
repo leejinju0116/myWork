@@ -1,0 +1,64 @@
+*-------------- header -------------*  글꼴:vardana, segoe ui,  #777, 기본자간 4px
+*-------------- logo -------------*
+BR Architects
+→15px, 자간 4px
+호버시 #ccc
+
+*-------------- navi -------------*
+Projects About Contact
+→15px, 자간 4px
+호버시 #ccc
+
+*-------------- section1 -------------*
+(로고)
+BR
+→36px, 자간 4px, #fff
+Architects
+→36px, 자간 4px, #f1f1f1
+
+*-------------- section2 -------------*
+Projects
+→24px, #000
+
+Summer House
+Brick House
+Renovated
+Barn House
+→15px. #fff
+
+*-------------- section3 -------------*
+About
+→24px, #000
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+→15px, 줄간격 22.5px, #000
+
+John Doe
+→24px, #000
+CEO & Founder
+→15px, #000
+
+Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+→15px, 줄간격 22.5px, #000
+
+contact버튼
+→15px, #000
+
+*-------------- section4 -------------*
+Contact
+→24px, #000
+
+Lets get in touch and talk about your next project.
+→15px, #000
+
+Name, Email, Subject, Comment
+→15px, #000
+
+SEND MESSAGE버튼
+→15PX, #000
+
+*-------------- footer -------------*
+Powered by w3.css
+→15px, #fff
+
+→
