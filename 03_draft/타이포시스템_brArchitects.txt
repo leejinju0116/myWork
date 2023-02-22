@@ -21,8 +21,7 @@ button 		 →15px, #000
 address →15px, #000
 footer →15px, #fff
 
-
-
+줄간격 1.5?
 
 
 

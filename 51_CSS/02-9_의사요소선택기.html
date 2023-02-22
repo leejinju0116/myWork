@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS</title>
+    <style>
+        p::first-letter {
+            font-size: 30px;
+            color: red;
+        }
+
+        p::first-line {
+            text-decoration: underline;
+        }
+
+        p::selection {background: red;}
+
+        ::marker {
+            color: red;
+        }
+
+        ::placeholder {
+            font-size: 10px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>선택기</h1>
+    <h2>의사 요소 선택기</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi voluptatem minus voluptatum blanditiis reprehenderit earum laboriosam deleniti itaque atque cupiditate enim delectus nisi corporis, magnam repudiandae, nesciunt veritatis quod in.</p>
+    <ul class="ul1">
+        <li>목록1</li>
+        <li>목록2</li>
+        <li>목록3</li>
+    </ul>
+    <ol>
+        <li>목록1</li>
+        <li>목록2</li>
+        <li>목록3</li>
+    </ol>
+    <input type="text" placeholder="아이디를 입력하세요">
+</body>
+</html>

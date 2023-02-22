@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS</title>
+    <style>
+        .container {
+            background: red;
+            overflow: hidden;
+        }
+        .container div {
+            float: left;
+            width: 200px;
+            height: 100px;
+            margin: 20px;
+            background: yellow;
+        }
+        .of1 {overflow: visible;}
+        .of2 {overflow: scroll;}
+        /* .of2 {overflow-y: scroll;} 세로방향만 스크롤생김*/
+        /* .of2 {overflow-x: scroll;} 가로방향만 스크롤생김, 대신 길이가 긴경우 세로적용안하고싶어도 생김*/
+        .of3 {overflow: hidden;}
+        .of4 {overflow: auto;}
+    </style>
+</head>
+<body>
+    <h1>오버플로우</h1>
+    <p>콘텐츠가 요소의 범위를 넘칠 경우 넘친부분을 그대로 표시(visible)하거나, 숨기거나(hidden), 스크롤바(scroll,auto)가 나타낸다.</p>
+    <div class="container">
+        <div class="of1">visible: Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, velit illo tempore optio quod doloremque quo facere ea et repudiandae modi necessitatibus dignissimos autem voluptatem fugiat reprehenderit repellendus ullam ex.</div>
+        <div class="of2">scroll: Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, velit illo tempore optio quod doloremque quo facere ea et repudiandae modi necessitatibus dignissimos autem voluptatem fugiat reprehenderit repellendus ullam ex.</div>
+        <div class="of3">hidden: Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, velit illo tempore optio quod doloremque quo facere ea et repudiandae modi necessitatibus dignissimos autem voluptatem fugiat reprehenderit repellendus ullam ex.</div>
+        <div class="of4">auto: Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, velit illo tempore optio quod doloremque quo facere ea et repudiandae modi necessitatibus dignissimos autem voluptatem fugiat reprehenderit repellendus ullam ex.</div>
+    </div>
+</body>
+</html>
