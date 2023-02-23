@@ -25,16 +25,15 @@ Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eius
 Im really good at:
 →18PX, #7777777
 
-Photoshop
-Illustrator
+Photoshop+Illustrator
 HTML+CSS
 JavaScript
 →15px, #777, 자간10px
 퍼세트: 15px, #fff
 
 Projects Done
-Coding
 Page Design
+Coding
 National Technical Qualification
 →15px, #fff
 
