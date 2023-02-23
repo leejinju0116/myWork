@@ -19,9 +19,23 @@
         /* 블록레벨요소를 가로 가운데 배치 */
         margin: 0 auto;
     }
+
+    .clearfix::after {
+        content: '';
+        clear:both;
+        display: block;
+    }
+
     ul {
         overflow: auto;
     }
+    
+    ul::after{
+        content: '';
+        clear:both;
+        display: block;
+    }
+
 
     li {
         float: left; 
@@ -38,7 +52,7 @@
     <h1>8장의 이미지를 4장씩 가로 배치</h1>
     <hr>
     <div class="container">
-        <ul>
+        <ul class="clearfix">
             <li><img src="https://via.placeholder.com/220x165" alt="이미지1"></li>
             <li><img src="https://placeimg.com/220/165/animals" alt="이미지2"></li>
             <li><img src="https://placeimg.com/220/165/arch" alt="이미지3"></li>
