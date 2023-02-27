@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS</title>
+    <style>
+        .parent {
+            /* position을 absolute로 하면 기준점이 필요한데 그기준점으로 relative를 넣는다. */
+            position: relative;
+            height: 500px;
+            background: pink;
+        }
+        .parent div {
+            width: 200px;
+            height: 50px;
+            background: red;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            /* magin: 가로크기의 절반의 음수로 값을지정한다. */
+            margin-left: -100px;
+            /* magin: 세로크기의 절반의 음수로 값을지정한다. */
+            margin-top: -25px;
+            /* 텍스트박스에서 가운데정렬, line-height도 높이랑 같은값을줘서 가운데정렬한다.(단, 텍스트가 한줄일경우) */
+            text-align: center;
+            line-height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>부모요소를 자식요소의 정중앙으로 배치</h1>
+    <div class="parent">
+        <div>정중앙 배치</div>
+    </div>
+</body>
+</html>

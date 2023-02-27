@@ -1,4 +1,4 @@
-*-------------- 헤더 -------------*  
+*-------------- 헤더 -------------*     영문:Lato  한글:Noto sans KR
 *-------------- 메뉴 -------------*
 HOME   ABOUT   PORTFOLIO   CONTACT
 →글꼴:LATO, 
@@ -44,7 +44,7 @@ PORTFOLIO
 MY WORK
 →24px, #777
 
-여기에 저희 최근 작품들이 있습니다.
+여기에 저의 최근 작품들이 있습니다.
 이미지를 클릭하면 큰 이미지로 볼 수 있습니다. 
 →15px, #777, italic, 줄간격1.8
 
@@ -78,5 +78,5 @@ Email: wireframe@hanmail.net
 To the top
 →15px, #000
 
-Copyright 2023 LJJ. All rights reserved.
+Copyright 2023 JJ. All rights reserved.
 →15px, #fff
