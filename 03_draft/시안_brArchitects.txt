@@ -1,8 +1,10 @@
 *-------------- header -------------*  글꼴:vardana, segoe ui,  #777, 기본자간 4px
 *-------------- logo -------------*
 BR Architects
-→15px, 자간 4px
-호버시 #ccc
+→15px, 자간 4px #000
+호버시배경 #ccc
+br은 b태그
+
 
 *-------------- navi -------------*
 Projects About Contact
@@ -19,6 +21,9 @@ Architects
 *-------------- section2 -------------*
 Projects
 →24px, #000
+
+아래 선: #f1f1f1
+
 
 Summer House
 Brick House
