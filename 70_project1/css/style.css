@@ -9,13 +9,9 @@ font-family: 'Noto Sans KR', sans-serif; */
 * {
     box-sizing: border-box;
 }
-body {
-    margin: 0;
-}
-ul {
-    margin: 0;
-    padding: 0;
-}
+
+body,h1,h2,h3,h4,p,ul { margin: 0;}
+ul {padding: 0;}
 
 li {
     list-style-type: none;
@@ -37,6 +33,7 @@ button {
     cursor: pointer;
     border: none;
 }
+address {font-style: normal;}
 .clearfix::after {
     content: '';
     clear: both;
@@ -92,13 +89,21 @@ button:hover {
     letter-spacing: 10px;
 } */
 
-.pf3 span {
-    font-size: 2.4rem;
-}
+.pf3 span {font-size: 2.4rem;}
 
-address {
-    font-size: 1.8rem;
+.sns a {
+    font-size: 24px;
+    color: #fff;
+    margin: 3px;
 }
+.sns a:hover {color: #777;}
+
+
+address {font-size: 1.8rem;}
+
+
+
+
 
 /* 아이콘 */
 nav li:first-of-type ~ li a::before {
@@ -119,7 +124,7 @@ form button img {
 }
 form button img span {vertical-align: middle;}
 
-body * {outline: 1px solid lime;}
+/* body * {outline: 1px solid lime;} */
 
 /* 헤더 */
 header {
@@ -145,6 +150,12 @@ nav li a:hover {
 .container {
     width: 940px;
     margin: 0 auto;
+    padding: 90px 0;
+}
+
+em {
+    display: block;
+    margin-bottom: 54px;
 }
 
 /* 패럴렉스 이미지 */
@@ -260,10 +271,15 @@ nav li a:hover {
     float: left;
     width: 285px;
 }
+
+address i {margin-right: 25px;}
+
 .info {
     float: right;
     width: 630px;
 }
+
+.info p {margin: 30px 0 40px 0;}
 form {text-align: right;}
 
 form input {
@@ -293,6 +309,7 @@ footer {
     background: #616161;
     text-align: center;
     color: #fff;
+    padding: 70px;
 }
 footer:hover {background: #000;}
 
@@ -310,4 +327,8 @@ footer .toTheTop {
 
 .toTheTop i {
     margin-right: 5px;
+}
+
+.sns {
+    margin: 15px 0;
 }
