@@ -37,7 +37,8 @@ HTML5+CSS3		70%
 JavaScript+jQuery		60%
 →15px, #595959, 자간10px
 퍼세트: 15px, #fff
-스킬바색상: #6DBFF2
+스킬바색상: #e98069
+아이콘색상: #595959
 
 
 Projects Done
@@ -45,8 +46,7 @@ Page Design
 Coding
 National Technical Qualification
 →15px, #fff
-
-배경색상: #8CA62E
+배경색상: #1b622f
 
 *-------------- 섹션3 -------------*
 PORTFOLIO
@@ -92,3 +92,5 @@ To the top
 
 Copyright 2023 JJ. All rights reserved.
 →15px, #fff
+
+아이콘색상: #FFF
