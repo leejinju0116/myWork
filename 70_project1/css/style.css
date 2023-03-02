@@ -189,14 +189,20 @@ em {
 }
 
 /* 섹션2 - 프로필2: 내사진과 프로필 텍스트 */
+.pf2 {margin-top: 70px;}
+
 .pf2 div {
     float: left;
     width: 440px;
 }
+
+.pf2 div p {margin-bottom:20px}
 .pf2 > p {
     float: right;
     width: 440px;
 }
+
+
 
 /* 섹션2 - 스킬바 */
 .skill h4 {margin: 60px 0 40px;}
