@@ -1,52 +1,92 @@
 @charset "utf-8";
-
-
-/* 초기화 */
-*{box-sizing: border-box;}
-
-a {
-    color: #000;
-    text-decoration: none;
-}
-
-img {
-    width: 100%;
-    vertical-align: top;
-}
-
-li {list-style-type: none;}
-
-button {
-    font-size: 1.5rem;
-    color: #000;
-    border: none;
-    width: 360px;
-    height: 38px;
-
-}
-
+/* 이자리에 폰트정해서 넣기 */
+@import url('reset.css');
 
 /* 타이포 */
 html {font-size: 10px;}
-body {
-    font:1.5rem/1.5 'segoe ui',sans-serif;
-    color:#000}
 
-h1 {font: 1.5rem/0.4; }
-h2 {font-size: 3.6rem/0.4; 
-color: #fff;}
-h2 {font-size: 3.6rem/0.4; 
-    color: #f1f1f1;}
-h2 {font-size: 2.4rem
-    color   #000;}
-h3 {font-size: 1.5rem
-    color:#fff;}
-h3 {font-size: 2.4rem;}
-p {font-size: 1.5rem
-color: #;
-line-height: 22px
+body {
+    font: 1.5rem/1.5 'segoe ui', 'Noto Sans KR', sans-serif;
+    color: #000;
 }
 
-a {font-size: 1.5rem}
+h1 {
+    font-size: 1.5rem;
+    color: #000;
+    letter-spacing: 0.4rem;
+}
+
+h2 {
+    font-size: 2.4rem
+    color: #000
+}
+
+.logo {
+    font-size: 3.6rem;
+    color: #fff;
+    letter-spacing: 0.4rem;
+    text-align: center;
+}
 
 
+
+h3 {
+    font-size: 2.4rem;
+    text-align: center;
+}
+
+
+button {
+    font-size: 1.5rem;
+    color: #fff
+}
+
+button:hover {color: #ccc}
+
+/* 섹션 1,2,3,4공통 */
+.container {
+    width: 1500px;
+    margin: 0 auto;
+}
+
+/* 헤더 */
+header {
+    height:55px; 
+    /* box-shadow:  */
+}
+nav li {float: right;}
+
+header a:hover {
+    background: #ccc;
+    color: #000;
+}
+
+
+/* 섹션1 */
+.logo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo b {background: #000; }
+/* 섹션2 */
+
+
+
+.pj li {
+    width: 360px;
+    height: 240px;
+    float: left;
+    }
+
+
+.pjb {
+    width: 150px;
+    height: 40px;
+    background: #000;
+}
+/* 섹션3 */
+/* 섹션4 */
+/* 푸터 */
