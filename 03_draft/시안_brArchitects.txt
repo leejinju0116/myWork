@@ -46,7 +46,7 @@ CEO & Founder
 Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
 →15px, 줄간격 22.5px, #000
 
-contact버튼
+contact 버튼
 →15px, #000
 
 *-------------- section4 -------------*
@@ -59,7 +59,7 @@ Lets get in touch and talk about your next project.
 Name, Email, Subject, Comment
 →15px, #000
 
-SEND MESSAGE버튼
+SEND MESSAGE 버튼
 →15PX, #000
 
 *-------------- footer -------------*

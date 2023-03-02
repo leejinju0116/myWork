@@ -85,9 +85,7 @@ button:hover {
     color: #000
 }
 
-/* span {
-    letter-spacing: 10px;
-} */
+.skill p {letter-spacing: 10px;}
 
 .pf3 span {font-size: 2.4rem;}
 
@@ -200,7 +198,9 @@ em {
     width: 440px;
 }
 
-/* 섹션2 - 스킬 */
+/* 섹션2 - 스킬바 */
+.skill h4 {margin: 60px 0 40px;}
+
 .skill div {
     height: 35px;
     background: #f1f1f1;
@@ -221,6 +221,8 @@ em {
 .skill li:nth-of-type(3) span {
     width: 75%;
 }
+
+.skill i {margin: 20px 10px 20px 0;}
 
 /* 섹션3 - 타이틀 portfolio */
 #sec3 .para h2 {
@@ -256,6 +258,7 @@ em {
     line-height: 45px;
     background: #f1f1f1;
     color: #000;
+    margin-top: 50px;
 }
 .myWork a:hover {background: #ccc;}
 
@@ -276,7 +279,7 @@ address i {margin-right: 25px;}
 
 .info {
     float: right;
-    width: 630px;
+    width: 620px;
 }
 
 .info p {margin: 30px 0 40px 0;}
@@ -300,6 +303,7 @@ form button {
     width: 160px;
     height: 45px;
     background: #000;
+    margin-top: 20px;
 }
 form button:hover {background: #ccc;}
 

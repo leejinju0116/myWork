@@ -1,54 +1,41 @@
-<타이포시스템> 
+<타이포시스템> 글꼴: segoe ui
 
-글꼴:vardana, segoe ui, 
+본문 body: 15px, #000, 줄간격 1.5(22)
 
 
-로고,네비: 15px, 자간4px, 호버시: #ccc
-a(h1), li
+h1   →15px, #000, 자간4px
+h2(로고) br   →36px, #fff 자간 4px    / Architects   →#f1f1f1
+h2   →24px, #000			(Projects / About / Contact)
+h3   →15px, #fff			(Summer House / Brick House / Renovated / Barn House
+h3   →24px, #000			(John / Jane / Mike / Dan)
 
-h2(BR) →36px, 자간 4px, #fff
-h2(Architects) →36px, 자간4px #f1f1f1
+a: 15px, 자간4px, 
+a:hover	→#ccc
 
-h2 →24px, #000		(Projects / About / Contact)
-h3 →15px, #fff (Summer House / Brick House / Renovated / Barn House)
-h3 →24px, #000 	(John Doe/Mike Ross)
-
-p →15px, #000 	(ceo & founder)
-p → 15px, 줄간격 22.5px, #000 (섹션3-lorem, phasellus, 섹션4-Let)
-
-button 		 →15px, #000
-
-address →15px, #000
-footer →15px, #fff
-
-줄간격 1.5?
+footer부분 w3.css: hover  →#4CAF50
 
 
 
 
 
+--------------------------------------------------------------------------------------------------
+<컬러시스템>
+SEND MESSAGE만 버튼색 #000
+버튼 hover시	#ccc
+
+#000000  본문글자색
+#ffffff  	로고BR, Summer House~, SEND MESSAGE, Powered by w3,css
+#f1f1f1	로고Architects
 
 
 
----------------------------------------------------------------------------
-<타이포시스템>글꼴:LATO  MYSITE
 
 
-본문 body  →15PX, #777, 줄간격 1.8
 
-h1  →24px, #ffffff, 자간10px		(LEE JIN JU 로고)
-h2  →36px, #fff, 자간10px 		(PORTFOLIO / CONTACT)
-h3  →24PX, #777			(ABOUT ME  / MY WORK / WHERE I WORK)
-h4  →18PX, #777			(Im really good at:)
 
-a →15PX, #777777
-a:hover	→15px, #000000
+<버튼사이즈>
+Contact		360*38
+SEND MESSAGE	155*40
 
-button 		 →15px, #000
-button 		 →15px, #fff
-button:hover	 →15px, #000
-
-span  →15PX, 자간10px		(Photoshop, Illustrator,HTML+CSS,JavaScript)
-퍼센트 →15px, #fff
-span  →숫자: 24px, #fff		(55+)
-address  →18px, #777, 줄간격1.8	(인천광역시 남동구)
+<폼사이즈>
+1500*40
