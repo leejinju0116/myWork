@@ -45,6 +45,7 @@ button {
 .container {
     width: 1500px;
     margin: 0 auto;
+    padding: 8px 16px;
 }
 
 h2 {
@@ -81,6 +82,7 @@ header a:hover {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    border: none;
 }
 
 .logo b {background: #000; }
@@ -110,6 +112,7 @@ header a:hover {
     height: 240px;
     float: left;
 }
+
 
 .ctb {
     width: 360px;
@@ -145,3 +148,4 @@ footer {
     text-align: center;
     color: #fff;
 }
+
