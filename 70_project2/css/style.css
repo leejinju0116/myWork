@@ -14,11 +14,12 @@ h1 {
     font-size: 1.5rem;
     color: #000;
     letter-spacing: 0.4rem;
+    padding: 8px 16px;
 }
 
 h2 {
-    font-size: 2.4rem
-    color: #000
+    font-size: 2.4rem;
+    color: #000;
 }
 
 .logo {
@@ -28,20 +29,17 @@ h2 {
     text-align: center;
 }
 
+h3 {font-size: 2.4rem;}
 
-
-h3 {
-    font-size: 2.4rem;
-    text-align: center;
+.pjb h3 {
+    font-size: 1.5rem;
+    color: #fff;
 }
-
 
 button {
     font-size: 1.5rem;
-    color: #fff
+    color: #fff;
 }
-
-button:hover {color: #ccc}
 
 /* 섹션 1,2,3,4공통 */
 .container {
@@ -49,18 +47,33 @@ button:hover {color: #ccc}
     margin: 0 auto;
 }
 
+h2 {
+    height: 69px;
+    border-bottom: 1px solid #f1f1f1;
+    padding: 16px 0;
+    margin: 10px 0;
+}
+
+
 /* 헤더 */
 header {
     height:55px; 
-    /* box-shadow:  */
+    box-shadow: 2px 2px 5px #ccc;
+    vertical-align: middle;
 }
-nav li {float: right;}
+nav li {float: left;
+    font-size: 1.5rem;
+    letter-spacing: 0.4rem;
+    padding: 8px 16px;
+}
+
+nav {float: right;}
+
 
 header a:hover {
     background: #ccc;
     color: #000;
 }
-
 
 /* 섹션1 */
 .logo {
@@ -71,11 +84,10 @@ header a:hover {
 }
 
 .logo b {background: #000; }
+
+
 /* 섹션2 */
-
-
-
-.pj li {
+.container li {
     width: 360px;
     height: 240px;
     float: left;
@@ -86,7 +98,50 @@ header a:hover {
     width: 150px;
     height: 40px;
     background: #000;
+    position: absolute;
+    text-align: center ;
+    vertical-align: center;
 }
+
+
 /* 섹션3 */
+.sec3 div {
+    width: 360px;
+    height: 240px;
+    float: left;
+}
+
+.ctb {
+    width: 360px;
+    height: 38px;
+    background: #f1f1f1;
+    text-align: center;
+    display: block;
+}
+
+.ctb:hover {color: #ccc;}
+
 /* 섹션4 */
+form input {
+    display: block;
+    text-align: left;
+    width: 1500px;
+    height: 40px;
+}
+
+button {
+    display: block;
+    width: 155px;
+    height: 40px;
+    background: #000;
+}
+
+button:hover {background-color: #ccc;}
+
 /* 푸터 */
+footer {
+    height: 85px;
+    background: #000;
+    text-align: center;
+    color: #fff;
+}
