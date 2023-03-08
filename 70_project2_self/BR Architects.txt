@@ -1,66 +1,52 @@
-*-------------- header -------------*  글꼴:vardana, segoe ui,  #777, 기본자간 4px
-*-------------- logo -------------*
+---------------------헤더---------------------
+---------------------로고---------------------
 BR Architects
-→15px, 자간 4px #000
-호버시배경 #ccc
-br은 b태그
-
-
-*-------------- navi -------------*
+---------------------네비---------------------
 Projects About Contact
-→15px, 자간 4px
-호버시 #ccc
 
-*-------------- section1 -------------*
-(로고)
+---------------------섹션1---------------------
 BR Architects
-→36px, 자간 4px, #fff
-
-
-*-------------- section2 -------------*
+---------------------섹션2---------------------
 Projects
-→24px, #000
-
-아래 선: #f1f1f1
-
-
 Summer House
 Brick House
 Renovated
 Barn House
-→15px. #fff
-
-*-------------- section3 -------------*
+---------------------섹션3---------------------
 About
-→24px, #000
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-→15px, 줄간격 22.5px, #000
 
 John Doe
-→24px, #000
 CEO & Founder
-→15px, #000
-
 Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
-→15px, 줄간격 22.5px, #000
+Contact버튼
 
-contact 버튼
-→15px, #000
+Jane Doe
+Architect
+Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+Contact버튼
 
-*-------------- section4 -------------*
+Mike Ross
+Architect
+Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+Contact버튼
+
+Dan Star
+Architect
+Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+Contact버튼
+---------------------섹션4---------------------
 Contact
-→24px, #000
 
 Lets get in touch and talk about your next project.
-→15px, #000
 
-Name, Email, Subject, Comment
-→15px, #000
+Name
+Email
+Subject
+Comment
 
-SEND MESSAGE 버튼
-→15PX, #000
+SEND MESSAGE
 
-*-------------- footer -------------*
+---------------------푸터---------------------
 Powered by w3.css
-→15px, #fff

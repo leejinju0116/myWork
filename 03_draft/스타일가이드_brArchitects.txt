@@ -1,38 +1,28 @@
-<타이포시스템> 글꼴: segoe ui
+<타이포시스템>
 
-본문 body: 15px, #000, 줄간격 1.5(22)
+본문 폰트: Verdana, 15px, #000, 줄간격 1.5
+제목 폰트: Segoe ui
 
+h1	36px, #fff, 자간 4px 		섹션1의 메인타이틀
+h2	24px, #000			섹션2,3,4의 제목(Projects / About / Contact)
+h3	18px(변경함)			섹션3의 하위제목(John / Jane / Mike / Dan)
 
-h1   →15px, #000, 자간4px
-h2(로고) br   →36px, #fff 자간 4px    / Architects   →#f1f1f1
-h2   →24px, #000			(Projects / About / Contact)
-h3   →15px, #fff			(Summer House / Brick House / Renovated / Barn House
-h3   →24px, #000			(John / Jane / Mike / Dan)
+.logo	15px, #000, 자간4px		네비게이션, GNB
+a	15px, #000, 자간4px		네비게이션, GNB
+→★링크는 별도로 색상안주면 파란색으로 적용됨(제목이나 p태그는 body에 적용한 색 적용됨)
 
-a: 15px, 자간4px, 
-a:hover	→#ccc
+.copy	#fff				copyright(저작권)
+body	15px, #000, 줄간격: 1.5
+span	15px, #fff				(Summer House / Brick House / Renovated / Barn House)
 
-footer부분 w3.css: hover  →#4CAF50
+button		15px, #000, bg:#f1f1f1 	섹션3 contact
+button:hover	bg: #ccc
 
-
-
+button		15px, #fff, bg:#000 		섹션4 SEND MESSAGE
+button:hover	#000, bg: #ccc
 
 
 --------------------------------------------------------------------------------------------------
-<컬러시스템>
-SEND MESSAGE만 버튼색 #000
-버튼 hover시	#ccc
-
-#000000  본문글자색
-#ffffff  	로고BR, Summer House~, SEND MESSAGE, Powered by w3,css
-#f1f1f1	로고Architects
-
-
-
-
-
-
-
 <버튼사이즈>
 Contact		360*38
 SEND MESSAGE	155*40
