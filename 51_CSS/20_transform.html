@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS</title>
+    <style>
+        .wrap {
+            border: 1px solid black;
+            margin: 20px;
+            /* perspective: 1000px; */
+        }
+        .trf {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background: yellow;
+            transition: .5s;
+        }
+
+        /* .wrap에 마우스 올리면 자식 .trftx를 오른쪽으로 100px이동 */
+        .wrap:hover .trftx {
+            /* transform: translateX (x); */
+            transform: translateX(100px);
+        }
+        .wrap:hover .trfty {
+            /* transform: translateY (y); */
+            transform: translateY(100px);
+        }
+        .trftz {transform: perspective(1000px)translateZ(0) ;}
+        .wrap:hover .trftz {
+            /* 원근감(perspective)과 함께 사용해야 한다. */
+            /* transform: translateZ (z); */
+            transform: perspective(1000px)translateZ(100px) ;
+        }
+        
+        .trftd {transform: perspective(1000px) translate3d(0,0,0);}
+        .wrap:hover .trftd {
+            /* transform: translate3d (x,y,z); */
+            transform: perspective(1000px) translate3d(100px,100px,100px);
+        }
+        .wrap:hover .trft {
+            /* transform: translate (x,[y]); */
+            transform: translate(100px,100px);
+        }
+
+
+/* br */
+        /* .wrap:hover .trft {margin-left: 100px;}
+        .trft {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background: yellow;
+            transition: .5s;
+        }
+        /* .wrap호버(부모)시 trft(자식)에 margin-left 100px으로 지정 */
+        /* 한칸 띄어쓰기로 자식에게 적용하는것을 표현 */
+        /* .wrap:hover .trft {margin-left: 100px;} */
+
+                /* -------------------------------------------------------- */
+        .move {
+            width: 200px;
+            background: thistle;
+            overflow: hidden;
+            padding: 10px 20px;
+        }
+        .move .bg {
+            float: left;
+            /* background: #000; */
+            transform: translateY(20px);
+            transition: .3s ease-out;
+        }
+        .move:hover .bg {transform: translateY(10px);}
+
+        .move .txt {
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>변환</h1>
+    <h2>이동(move)</h2>
+    <div class="wrap">
+        <span class="trf trftx">translateX</span>transform
+    </div>
+    <div class="wrap">
+        <span class="trf trfty">translateY</span>transform
+    </div>
+    <div class="wrap">
+        <span class="trf trftz">translateZ</span>transform
+    </div>
+    <div class="wrap">
+        <span class="trf trftd">translate3D</span>transform
+    </div>
+    <div class="wrap">
+        <span class="trf trft">translate</span>transform
+    </div>
+
+<br>
+    <div class="wrap">
+        <span class="trft trft6">translate</span>transform
+    </div>
+
+<hr>
+    <div class="move">
+        <div class="bg">
+            <img src="assets/inthree/main-visual-dot-01.png" alt="">
+        </div>
+        <div class="txt">
+            <h3>가이드맵</h3>
+            <p>서울랜드를 한눈에<br> 둘러보세요.</p>
+        </div>
+    </div>
+</body>
+</html>
