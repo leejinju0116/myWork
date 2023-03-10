@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap');
+        /* body * {outline: 1px solid red;} */
+/* .wrap {
+    width: 110px;
+    height: 110px;
+    background: #5bae2a;
+    border-radius: 50%;
+}
+.front {
+    font-size: 24px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transform: rotatey(180deg);
+}
+.back {font-size: 28px;} */
+
+
+.wrap {
+    position: relative;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    overflow: hidden;
+    perspective: 1000px;
+}
+/* 겹쳐지게 중심배치하려고 사용 */
+.wrap > div {position: absolute;}
+.wrap:hover .front{transform: rotateY(180deg);}
+.wrap:hover .back{transform: rotateY(0deg);}
+
+.front{
+    background: #ccc;
+    border-radius: 50%;
+    transition: .3s;
+    /* 뒷면을 숨기는 기능(겹쳐지지않게) */
+    backface-visibility: hidden;
+}
+.back {
+    width: 100%;
+    height: 100%;
+    background: #5bae2a;
+    border-radius: 50%;
+    transition: .3s;
+    transform: rotateY(-180deg);
+}
+
+span {
+    position: absolute;
+    font-family:'Noto Sans KR', sans-serif;
+    font-weight: 700;
+    /* 가로 가운데배치-포지션썻을때 (블록라인,인라인전부가능) */
+    left: 50%; transform: translateX(-50%);
+}
+.front span {
+    font-size: 24px;
+    color: #333;
+    bottom: 15px;
+}
+.back span {
+    font-size: 28px;
+    color: #fff;
+    /* 세로 가운데 배치 */
+    top: 50%; transform: translate(-50%, -50%);
+}
+    </style>
+</head>
+
+<body>
+    <h1>회전</h1>
+    <h2>팜한농</h2>
+    <div class="wrap">
+        <div class="back">
+            <span>사과</span>
+        </div>
+        <div class="front">
+            <div><img src="assets/farmhannong/icon_farming_02.png" alt=""></div>
+            <span>사과</span>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS</title>
+    <style>
+        .wrap {
+            border: 1px solid black;
+            margin: 20px;
+            perspective: 1000px;
+        }
+
+        .trf {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background: yellow;
+            transition: .5s;
+        }
+
+        .wrap:hover .trfrx {
+            /* transform: rotateX (각도); */
+            transform: rotateX(45deg);
+        }
+
+        .wrap:hover .trfry {
+            /* transform: rotateY (각도); */
+            transform: rotateY(90deg);
+        }
+
+        .wrap:hover .trfrz {
+            /* transform: rotateZ (각도); */
+            transform: rotateZ(45deg);
+        }
+
+        .wrap:hover .trfrd {
+            /* transform: rotate3d (x(위치),y(위치),z(위치),각도); */
+            transform: rotate3d(2, 2, 2, 45deg);
+        }
+
+        .wrap .trfro {
+            transform-origin: 0% 0%;
+        }
+
+        .wrap:hover .trfro {
+            /* transform: rotateX (숫자deg); */
+            transform: rotateX(45deg);
+        }
+
+        .wrap:nth-of-type(7) {
+            background: #000;
+            color: red; 
+            perspective: 2000px;
+            perspective-origin: right bottom;}
+        
+
+
+    </style>
+</head>
+
+<body>
+    <h1>변환</h1>
+    <h2>회전</h2>
+    <div class="wrap">
+        <span class="trf trfrx">rotateX</span>transform
+    </div>
+    <div class="wrap">
+        <span class="trf trfry">rotateY</span>transform
+    </div>
+    <div class="wrap">
+        <span class="trf trfrz">rotateZ</span>transform
+    </div>
+    <div class="wrap">
+        <span class="trf trfrd">rotatescale3D</span>transform
+    </div>
+    <div class="wrap">
+        <span class="trf trfr">rotate</span>transform
+    </div>
+    <div class="wrap">
+        <span class="trf trfro">rotateO</span>transform
+    </div>
+    <div class="wrap">
+        <span class="trf trfro">rotateO</span>transform
+    </div>
+
+</body>
+
+</html>
