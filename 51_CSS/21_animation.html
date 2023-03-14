@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS</title>
+    <style>
+        div {
+            position: relative;
+            /* left: 100px; */
+            width: 100px;
+            height: 100px;
+            background: yellow;
+            /* margin-left: 100px; */
+            /* transform: translateX(100px); */
+            left:0px;    top:0px;
+            margin: 20px;
+}
+
+        .anim1 {
+            /* animation-name: move;
+            animation-duration: 3s;
+            animation-iteration-count: 3;
+            animation-direction: alternate;
+            animation-timing-function: linear;
+            animation-delay: 3s; */
+
+            /* 속기속성 */
+            animation: move 3s infinite alternate linear 2s;
+        }
+
+        @keyframes move {
+            0% {left:0; top: 0;}
+            25% {left:200px;top:0px}
+            50% {left:200px; top:100px}
+            75% {left:0px; top:100px}
+            100% {left:0px; top:0px}
+        }
+
+        .anim {
+            animation-name: move2;
+            animation-duration: 3s;
+            animation-delay: 2s;
+            background: red;
+            left: 0;
+        }
+
+        @keyframes move2 {
+            0% {left:0; background: blue;}
+            100% {left: 300px; background: green;}
+        }
+
+        .anim2 {
+            /* 시작(지연) -> 0% -> 100% -> 시작 */
+            animation-fill-mode: none;
+        }
+        .anim3 {
+            /* 키프레임의 마지막 상태를 유지 */
+            /* 시작(지연) -> 0% ->100% */
+            animation-fill-mode: forwards;
+        }
+        .anim4 {
+            /* 0%*(지연) -> 100% -> 시작 */
+            animation-fill-mode: backwards;
+        }
+        .anim5 {
+            /*  0%(지연) -> 100% */
+            animation-fill-mode: both;
+        }
+        .wrap  {
+            width: 300px;
+            border:1px solid red;
+            background: transparent;
+            margin-bottom: 100px;
+        }
+        .wrap:hover .anim6 {
+            animation-play-state: running;
+        }
+        .anim6 {
+            animation:rotate 1s infinite linear paused;
+        }
+
+        @keyframes rotate {
+            0% {transform: rotate(0deg);}            
+            100% {transform: rotate(360deg);}            
+        }
+    </style>
+</head> 
+<body>
+    <h1>애니메이션</h1>
+    <div class="anim1">박스</div>
+    <hr>
+    <h2>animation-fill-mode</h2>
+    <div class="anim anim2">none</div>
+    <div class="anim anim3">forwards</div>
+    <div class="anim anim4">backwards</div>
+    <div class="anim anim5">both</div>
+    <hr>
+    <h2>animation-play-state</h2>
+    <div class="wrap">
+        <div class="anim6">infinite</div>
+    </div>
+</body>
+</html>
