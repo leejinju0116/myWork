@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS</title>
+    <style>
+/* reset */
+body, ul {margin: 0; padding: 0;}
+ul {list-style: none;}
+img {width: 100%; vertical-align: top;}
+
+/* slide */
+.slide {
+    position: relative;
+    width: 838px;
+    height: 300px;
+    overflow: hidden;
+}
+.slide ul {
+    position: absolute;
+    left: 0; top: 0;
+    /* li가 100%(838px)인데 사진이 4장이라 400% */
+    width: 400%;
+    height: 100%;
+    animation: slide 9s infinite;
+}
+@keyframes slide {
+    0% {left: 0;}
+    5% {left: -100%;}
+    33% {left: -100%;}
+    38% {left: -200%;}
+    66% {left: -200%;}
+    71% {left: -300%;}
+    99.99% {left: -300%;}
+    100% {left: 0;}
+}
+.slide li {
+    float: left;
+    /* 400%의 25%가 100퍼센트이기때문에 */
+    width: 25%; 
+    height: 100%;
+
+}
+
+
+    </style>
+</head> 
+<body>
+    <h1>상하 슬라이드</h1>
+<div class="slide">
+    <ul>
+        <li><img src="assets/slide/slide.jpg" alt="slide1"></li>
+        <li><img src="assets/slide/slide2.jpg" alt="slide2"></li>
+        <li><img src="assets/slide/slide3.jpg" alt="slide3"></li>
+        <li><img src="assets/slide/slide.jpg" alt="slide1"></li>
+    </ul>
+</div>
+
+
+    </div>
+</body>
+</html>

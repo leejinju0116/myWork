@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS</title>
+    <style>
+        * {box-sizing: border-box;}
+        /* 
+        플렉스박스
+        부모: 플렉스 컨테이너
+            display:flex;
+        자식: 플렉스 아이템이라 함
+        */
+
+    .container {
+        width: 448px; 
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        /* outline은 보더바깥쪽에 생김, border은 boxsizing에 영향이있지만 outline은 영향없음 */
+        outline: 1px solid red;
+    }
+    .container div{
+        /* float: left; */
+        width: 100px; height: 100px;
+        background-color: pink;
+    }
+    .container div:not(div:nth-of-type(1),:nth-of-type(5)) {margin-left: 16px;}
+
+    </style>
+</head>
+<body>
+    <h1>flexible(플렉서블)</h1>
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+    </div>
+    <p>나는 단락이다.</p>
+</body>
+</html>
