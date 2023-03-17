@@ -95,11 +95,11 @@ Copyright 2023 JJ. All rights reserved.
 
 h1(로고) 이미지
 h2   →24px, #000, 자간4px,굵기:bold		(카테고리 /베스트셀러 / 메이크업컨설팅예약)
-h3   →15px, #fff				(페이스 / 립 / 아이 / 아티스틱 / 클렌저 / 팔레트&키트 / 스페셜제품 / 메이크업도구)
+h3   →16px, #fff				(페이스 / 립 / 아이 / 아티스틱 / 클렌저 / 팔레트&키트 / 스페셜제품 / 메이크업도구)
 h3   →24px, #000				(UHD컨실러 / ULTRA HD 파우더 / UHD 프레스드 파우더 / UHD 스틱 파운데이션)
-navi	16px, #000, 자간4px
+navi	16px, #fff, 자간4px
 
-a: 15px, 자간4px, 
+a: 16px, 자간4px, 
 a:hover	→#ccc
 
 

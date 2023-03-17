@@ -8,6 +8,7 @@
     <title>Make up for ever_이진주</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <!--  헤더 -->
     <header>
@@ -25,7 +26,7 @@
     <!-- 섹션1 -->
     <section id="section1" class="container">
         <h2 class="mainTit"><img src="images/logo_b.png" alt="logo"></h2>
-        <img src="images/main.png" alt="main">
+        <div class="mainBG"><img src="images/main.png" alt="main"></div>
     </section> <!-- /섹션1 -->
 
     <!-- 섹션2 -->
@@ -85,7 +86,7 @@
                 <h3>ULTRA HD 파우더</h3>
                 <P>1색상</P>
                 <P>￦56,000</P>
-                <a href="#" n>제품보기</a>
+                <a href="#">제품보기</a>
             </li>
             <li>
                 <div><img src="images/best_3.png" alt="best_3"></div>
@@ -107,15 +108,16 @@
     <!-- 섹션4 -->
     <section id="section4" class="container">
         <h2>메이크업컨설팅예약</h2>
-        <p>메이크업포에버의 뷰티서비스입니다. 당신에게 맞는 메이크업을 컨설팅해드립니다. 지금 바로 예약하세요<p>
-        <form action="message.php" mehtod="post">
+        <p>메이크업포에버의 뷰티서비스입니다. 당신에게 맞는 메이크업을 컨설팅해드립니다. 지금 바로 예약하세요
+        <p>
+        <form action="action_page.php">
             <input type="text" placeholder="날짜" name="user_name">
             <input type="text" placeholder="시술메뉴(브로우/아이/베이스)" name="user_email">
             <input type="text" placeholder="이름" name="user_subject">
             <input type="text" placeholder="핸드폰" name="user_comment">
-            <button type="summit">예약하기</button>
+            <button>예약하기</button>
         </form>
-        <img src="images/footer.png" alt="메이크업포에버창시자"></img>
+        <img src="images/footer.png" alt="메이크업포에버창시자">
     </section> <!-- /섹션4 -->
 
     <!-- 푸터 -->
