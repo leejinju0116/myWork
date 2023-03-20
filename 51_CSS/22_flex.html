@@ -8,10 +8,27 @@
     <style>
         * {box-sizing: border-box;}
         /* 
-        플렉스박스
+        플렉스박스(유연한박스)
+        주축과 교차축이 생김(방향에 따라 다름)
+            flex-direction:row; 이면 주축 row, 교차축은 column
+            flex-direction:column; 이면 주축 column, 교차축 row
+
         부모: 플렉스 컨테이너
-            display:flex;
+            1. display:flex(속성값);
+            2. flex-direction : 방향
+            3. flex-wrap : 줄바꿈여부
+            4. flex-flow: direction wrap
+            5. justify-content : 주축 정렬
+            6. align-items : 교차축 정렬(한개의 라인)
+            7. align-content : 교차축 블록방향 정렬(두개이상의 라인)
+
         자식: 플렉스 아이템이라 함
+            8. align-self : 교차축 정렬 (align-items보다 우선적용)
+            9. flex-grow : 성장(커진다)
+            10. flex-shrink :수축(작아진다)
+            11. flex-basis : 초기값(처음 가로 크기)
+            12. flex(속성): grow shrink basis
+            13. order : 순번(숫자가 작을수록 앞에 배치)
         */
 
     .container {
@@ -33,6 +50,12 @@
 </head>
 <body>
     <h1>flexible(플렉서블)</h1>
+    <!--
+        div.container은 부모요소이다.
+        부모요소에 display:flex;로 지정하면
+        이 부모요소를 플렉스 컨테이너라고 부른다.
+        자식은 플렉스 아이템이라고 부른다. 
+    -->
     <div class="container">
         <div>1</div>
         <div>2</div>
