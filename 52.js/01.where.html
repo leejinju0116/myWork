@@ -1,21 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML+CSS+JS</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-    .blue {color: blue;}
-    </style>
+
+    <!-- 외부 스크립트 -->
+    <!-- <script src="script.js"> </script> -->
+
+    <!-- 내부스크립트  -->
+    <script>
+    // 스크립트 주석: 한줄주석 (ctrl+/)
+        /* 스크립트 주석: 한줄이상 (shift+alt+A) */
+    </script>
+
 </head>
+
 <body>
-    <h1>어디에 사용하는가</h1>
+    <h1>어디에 사용하는지</h1>
     <ul>
-        <li style="color:red">인라인</li>
+        <!-- 인라인 스크립트 -->
+        <li onclick="this.style.color='red';">인라인</li>
         <li class="blue">내부</li>
         <li class="green">외부</li>
     </ul>
+
+
+    <!-- 외부 스크립트 -->
+    <script src="script.js"> </script>
+
+    <!-- 내부스크립트  -->
+    <script>
+
+        const blue = document.querySelector('.blue');
+        blue.onclick = blueFn;
+
+        function blueFn() {
+            blue.style.color = 'blue';
+        }
+
+    </script>
 </body>
 </html>
