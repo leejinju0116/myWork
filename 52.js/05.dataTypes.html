@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS+JS</title>
+</head>
+
+<body>
+    <h1>데이터 유형</h1>
+
+
+
+
+
+
+    <!-- 내부 스크립트  -->
+<script>
+/*     
+    1. String: '문자열' 또는 "문자열"
+    2. Number: 숫자
+    3. Boolean(부울) : true 또는 false
+    4. Undefined
+    5. Object(객체): 배열(Array), 날짜(Date), 수학(Math), Null,... 
+    */
+
+    //typeof(데이터) - 데이터의 타입표시
+    var abc = 1000;
+    var def;
+
+    //String(문자열)
+    document.write(typeof('문자열') + '<br>');
+    document.write(typeof('10') + '<br>');
+    document.write(typeof('true') + '<br>');
+
+    //변수
+    document.write(typeof(abc) + '<br>');
+
+    //숫자(Number)
+    document.write(typeof(10) + '<br>');
+
+    //Boolean(부울)
+    document.write(typeof(true) + '<br>');
+
+    //Undefined
+    document.write(typeof(def) + '<br>');
+
+    //Object(객체)
+    document.write(typeof([]) + '<br>');
+    document.write(typeof({}) + '<br>');
+    document.write(typeof(null) + '<br>');
+    document.write(typeof(new Date()) + '<br>');
+    document.write(typeof(Math.random()) + '<br>');
+
+</script>
+
+</body>
+</html>

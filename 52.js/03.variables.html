@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS+JS</title>
+</head>
+
+<body>
+    <h1>변수</h1>
+
+
+
+
+
+
+    <!-- 내부 스크립트  -->
+<script>
+    // birthYear1과 birthYear2를 변수로 선언
+    var birthYear1;
+    let birthYear2;
+
+    /* 
+    birthYar1 변수에 1995를 할당한다.
+    birthYar2 변수에 2000를 할당한다.
+    오른쪽 데이터를 왼쪽에 넣는다라는 표현
+    ==, ===이 같다라는 표현
+     */
+    birthYear1 = 1995;
+    birthYear2 = 2000;
+    
+    // let과 const는 재선언(두번선언)할수없다
+    // const는 재할당 할수없다.
+    var birthYear1;
+    // let birthYear2; ->에러
+    // const birthYear3; ->에러
+
+    // 선언과 할당
+    // const는 선언과 할당을 함께 해야 한다.
+    let birthYear3 = 1995;
+    const birthYear4 = 2000;
+
+    // 두개이상의 변수를 ,로 구분하여 선언 (var하고 let은 가능/ let하고 var은 불가능)
+    var currentYear1, age1;    
+    let currentYear2, age2;    
+    const currentYear3 = 2023, age3 = 20;
+
+    // let과 const는 블록변수로 재선언불가지만, 블록이 다르면 재선언 가능
+    /* 
+    var currentYear1, age1;    
+    let currentYear2, age2;    
+    const currentYear3 = 2023, age3 = 20; -> 에러
+     */
+
+    { var currentYear1, age1;    
+    let currentYear2, age2;    
+    const currentYear3 = 2023, age3 = 20;}
+
+    // 지역변수와 전역변수로 나뉜다.
+
+</script>
+
+</body>
+</html>
