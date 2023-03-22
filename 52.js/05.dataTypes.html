@@ -18,16 +18,18 @@
 
     <!-- 내부 스크립트  -->
 <script>
-/*     
+    /*     
     1. String: '문자열' 또는 "문자열"
     2. Number: 숫자
     3. Boolean(부울) : true 또는 false
-    4. Undefined
+    4. Undefined(정의하지않음)
     5. Object(객체): 배열(Array), 날짜(Date), 수학(Math), Null,... 
     */
 
     //typeof(데이터) - 데이터의 타입표시
     var abc = 1000;
+    // 변수 선언후 값을 지정하지않으면 Undefined
+    // typeof(): 연산자
     var def;
 
     //String(문자열)
@@ -48,11 +50,13 @@
     document.write(typeof(def) + '<br>');
 
     //Object(객체)
-    document.write(typeof([]) + '<br>');
+    document.write(typeof(['봄','여름','가을','겨울']) + '<br>');
     document.write(typeof({}) + '<br>');
     document.write(typeof(null) + '<br>');
     document.write(typeof(new Date()) + '<br>');
     document.write(typeof(Math.random()) + '<br>');
+
+    document.write(0.1+0.2 + '<br>');
 
 </script>
 
