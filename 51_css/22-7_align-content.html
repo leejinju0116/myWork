@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS</title>
+    <style>
+        .container {
+            /* display: flex;는 부모에게 지정 */
+            display: flex;
+            outline: 1px solid purple;
+            /* align-items와 차이점은 2줄이상일때 표현됨, wrap값의 wrap 또는 wrap-reverse를 사용해야함 */
+            flex-wrap: wrap;
+        }
+
+        .container div {background-color: pink; }
+
+        /* 교차축 세로 */
+        .wrap1 .container {height: 200px;}
+        .wrap1 .container div {width: 100px;}
+        
+
+        /* align-content와 align-items를 동시에 적용하면 align-content로 적용된다. */
+        /* 플렉스 컨테이너 크기만큼 늘어남 */
+        .acs {align-content: stretch;}
+        /* 교차축의 시작에 정렬  */
+        .acfs {align-content: flex-start;}
+        /* 교차축의 끝 정렬 */
+        .acfe {align-content: flex-end;}
+        /* 교차축의 가운데 정렬 */
+        .acc {align-content: center;}
+        /* 첫번째 플렉스 아이템은 시작에, 마지막 번째 플렉스 아이템은 끝에하고 사이간격 동일하게 */
+        .acsb {align-content: space-between;}
+        /* 플렉스 아이템 좌우 또는 상하 여백크기 동일하게 */
+        .acsa {align-content: space-around;}
+        /* 플렉스 아이템의 크기를 제외하고 여백의 크기를 동일하게 */
+        .acse {align-content: space-evenly;}
+
+
+
+        /* 교차축을 가로 */
+        .wrap2 {display: flex;}
+        .wrap2 .container {
+            flex-direction: column;
+            width: 200px;
+            height: 400px;
+            }
+        .wrap2 .container div {height: 100px;}
+
+    </style>
+</head>
+
+<body>
+    <h1>flexible(플렉서블)</h1>
+    <h2>교차축이 세로 정렬</h2>
+    <div class="wrap1">
+        <div class="container acs">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+        </div>
+        <div class="container acfs">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+        </div>
+        <div class="container acfe">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+        </div>
+        <div class="container acc">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+        </div>
+        <div class="container acsb">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+        </div>
+        <div class="container acsa">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+        </div>
+        <div class="container acse">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+        </div>
+    </div> <!-- //.wrap1 -->
+
+    <h2>교차축이 가로 정렬</h2>
+    <div class="wrap2">
+        <div class="container acs">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+        </div>
+        <div class="container acfs">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+        </div>
+        <div class="container acfe">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+        </div>
+        <div class="container acc">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+        </div>
+        <div class="container acsb">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+        </div>
+        <div class="container acsa">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+        </div>
+        <div class="container acse">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+        </div>
+    </div> <!-- //.wrap2 -->
+    
+</body>
+
+</html>

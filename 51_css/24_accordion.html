@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS</title>
+    <style>
+        /* 초기화 */
+        * {margin: 0; padding: 0; box-sizing: border-box;}
+        body {font: 14px/1.6 '굴림', sans-serif; color:#333;}
+        a {text-decoration: none; color: #333;}
+        ul {list-style: none;}
+
+        /* 내비게이션 */
+        nav {
+            /* 서브메뉴가 겹쳐야해서 relative사용함 */
+            position: relative;
+            width: 160px;
+            /* height: 450px; */
+            background: peachpuff;
+            
+        }
+
+        /* 메인메뉴(1depth) */
+        .main > li > a {
+            /* 아래밑줄을 전체그어지게 하려고 block설정, 안그러면 자신의 크기로 지정됨 */
+            display: block;
+            border-bottom: 1px solid #333;
+            font-size: 16px;
+            font-weight: bold;
+            padding-left: 8px;
+        }
+        .main > li > a:hover {
+            background: sandybrown;
+            color: #fff;
+        }
+
+        .main > li:hover .sub {display: block;}
+
+        /* 서브메뉴(2depth) */
+        .sub {
+            display: none;
+            padding: 16px 0;
+        }
+
+        /* 서브메뉴사이간격 */
+        .sub li {
+            padding-left: 16px;
+            margin-bottom: 8px;
+        }
+
+        /* 패딩적용확인 */
+        .sub a {
+            color: #777;
+            padding: 4px 16px;
+        }
+
+        .sub a:hover {
+            background: sandybrown;
+            color: #fff;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <!-- 내비게이션 -->
+    <nav>
+        <ul class="main">
+            <li>
+                <a href="#">보듬이란</a>
+                <ul class="sub">
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">훈련사 소개</a></li>
+                    <li><a href="#">오시는길</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">교육방법</a>
+                <ul class="sub">
+                    <li><a href="#">영상교육</a></li>
+                    <li><a href="#">그룹레슨</a></li>
+                    <li><a href="#">개인레슨</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">교육신청</a>
+                <ul class="sub">
+                    <li><a href="#">나혼자한다</a></li>
+                    <li><a href="#">비회원수업진행</a></li>
+                    <li><a href="#">교육회원 가입</a></li>
+                    <li><a href="#">그룹레슨 신청</a></li>
+                    <li><a href="#">개인레슨 신청</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">커뮤니티</a>
+                <ul class="sub">
+                    <li><a href="#">강형욱칼럼</a></li>
+                    <li><a href="#">보호자 인터뷰</a></li>
+                    <li><a href="#">교육후기</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</body>
+
+</html>

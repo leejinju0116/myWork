@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+JS</title>
+</head>
+<body>
+    <h1>날짜와 시간</h1>
+    <h2>date</h2>
+
+
+    <script>
+        // date 객체 인스턴스 생성
+        const date = new Date();
+        const date2 = new Date("2023-03-29");
+        // (그린치 평균시(GMT)
+        const date3 = new Date("2023-03-29T18:00:00");
+        //국제 표준시(UTC)날짜와 시간
+        const date4 = new Date("2023-03-29T18:00:00Z");
+
+
+
+
+        // 객체,메서드()
+        /* 
+        배열.slice(index)
+        index 번호부터 배열요소 끝까지 복제
+        */
+        const slice1 = nums.slice(2);
+
+        /* 
+        배열.slice(index1,index2)
+        index1은 시작번호 부터 index2 끝번호-1까지 복제
+        */
+        const slice2 = study.slice(1, 2);
+
+
+        // 출력
+        document.write(date + '<br>');
+        document.write(date2 + '<br>');
+        document.write(date3 + '<br>');
+        document.write(date4 + '<br>');
+
+
+
+    </script>
+</body>
+</html>

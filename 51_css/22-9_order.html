@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS</title>
+    <style>
+        .container {
+            /* display: flex;는 부모에게 지정 */
+            display: flex;
+            outline: 1px solid purple;
+        }
+
+        .container div {
+            width: 100px;
+            height: 100px;
+            background-color: pink; }
+
+        /* 
+        숫자가 작을수록 우선배치 
+        숫자가 같으면 같은 순서로됨
+        order생략하면 0, 0은 쓰나 안쓰나 같은 값
+        단, 0이 우선순위라 먼저 가게됨
+        */
+        .o1 {order: 0;}
+        .o2 {order: 2;}
+        .o3 {order: 0;}
+        .o4 {order: 1;}
+
+
+    </style>
+</head>
+
+<body>
+    <h1>flexible(플렉서블)</h1>
+    <h2>플렉스 아이템의 순서 바꾸기</h2>
+    <div class="wrap1">
+        <div class="container">
+            <div class="o1">1</div>
+            <div class="o2">2</div>
+            <div class="o3">3</div>
+            <div class="o4">4</div>
+        </div>
+    </div> <!-- //.wrap1 -->
+
+
+</body>
+</html>

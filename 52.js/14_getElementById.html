@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+JS</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+
+<body>
+    <h1>HTML 요소 선택</h1>
+    <p>나는 단일 요소이다.</p>
+    <ul>
+        <li id="lst1">목록1</li>
+        <li class="lst2">목록2</li>
+        <li>목록3</li>
+    </ul>
+
+
+
+    <script>
+        /* 
+            HTML 요소 선택
+            document 객체의 method
+            1. getElementById('아이디명');
+            2. getElementByClassName('클래스명');
+            3. getElementByTagName('태그명');
+
+            querySelector('선택기'): 단일요소
+            querySelectorAll(선택기): 같은 이름의 여러요소
+        */
+
+        //변수를 여러번 사용해서 풀어서 쓴버전
+        /* const lst1 = document.getElementById('lst1');
+        const lst2 = document.getElementByClassName('lst2');
+        const para = document.getElementByTagName('p'); */
+
+
+        //,를 사용하면 변수 여러번안쓰고 간단하게 사용할수있음
+        //변수선언
+        const lst1 = document.getElementById('lst1'),
+            lst2 = document.getElementsByTagName('lst2'),
+            para = document.getElementsByTagName('p'),
+            lst3 = document.querySelector('#lst1'),
+            lst4 = document.querySelector('.lst2'),
+            para2 = document.querySelector('p'),
+            lst = document.querySelectorAll('li');
+
+
+        //출력
+        document.write(lst1 + '<br>');
+        document.write(lst2 + '<br>');
+        document.write(para + '<br>');
+        document.write(lst3 + '<br>');
+        document.write(lst4 + '<br>');
+        document.write(para2 + '<br>');
+        document.write(lst[0] + '<br>');
+
+    </script>
+
+</body>
+
+</html>

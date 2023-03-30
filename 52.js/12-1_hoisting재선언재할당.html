@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+JS</title>
+</head>
+
+<body>
+    <h1>변수의 재선언과 재할당</h1>
+
+
+
+
+    <!-- 내부 스크립트  -->
+    <script>
+        //var 선언
+        var x = 10;
+        // 재선언
+        var x;
+        //재할당
+        x = 20;
+        document.write(x + '<br>')
+        // ->var은 재선언, 재할당 가능
+
+
+        //let 선언
+        let y = 10;
+        // 재선언
+        // let y;
+        //재할당
+        y = 30;
+        document.write(y + '<br>')
+        // ->let은 재선언 할수없고, 재할당 가능하다.
+
+
+        //const 선언
+        const z = 10;
+        // 재선언
+        // const z;
+        //재할당
+        // z = 50;
+        document.write(z + '<br>')
+        // ->const는 재선언, 재할당을 할수없다.
+
+
+    </script>
+
+</body>
+
+</html>

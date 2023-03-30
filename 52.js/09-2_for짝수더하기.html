@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS+JS</title>
+</head>
+
+<body>
+    <h1>선택문</h1>
+    <h2>for 짝수 더하기</h2>
+
+
+    <!-- 내부 스크립트  -->
+    <script>
+        /*     
+        for (초깃값; 조건; 증가식) {
+            실행코드;
+        }   
+         */
+
+        const num = 10;
+        let sum = 0;
+
+        /*         for (let i = 1; i <= num; i++) {
+                    if (i % 2 === 1) { continue; }
+                    document.write(i + '<br>');
+                } */
+
+        for (let i = 1; i <= num; i++) {
+            if (i % 2 === 1) { continue; }
+            //처음 sum은 0, i는 2.4.5.6..등, 인데 총합한수가 표현되야하기깨문에 document는 {} 바깥으로 적용함
+            sum = sum + i;
+        }
+        document.write(sum + '<br>');
+
+    </script>
+
+</body>
+
+</html>

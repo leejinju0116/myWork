@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS+JS</title>
+</head>
+
+<body>
+    <h1>화살표 함수</h1>
+    <p>화살표 함수는 익명 함수에만 사용할수 있다.</p>
+
+
+
+    <!-- 내부 스크립트  -->
+    <script>
+        /* 
+        익명 함수
+        var 변수 = function (매개변수1, 매개변수2, ...) { 실행코드; }
+        
+        화살표 함수
+        var 변수 = (매개변수1, 매개변수2, ...) => {실행코드;}
+
+        
+        1. 매개변수가 없는 경우
+        var 변수 = () => { 실행코드; }
+
+        2. 매개변수가 1개인경우 ()괄호 생략가능
+        var 변수 = 매개변수 => { 실행코드; }
+
+        3. 매개변수가 2개 이상인경우
+        var 변수 = (매개변수1, 매개변수2, ...) => { 실행코드; }
+
+        3. 실행코드가 1문장이면 중괄호 생략
+        (매개변수1, 매개변수2, ...) => 실행코드;
+
+        */
+
+        // 매개변수=i, 매개변수는 함수 내에서만 사용가능한 지역변수
+        function num(i) {
+            document.write ('나는 ' + i + '번째 함수이다. <br>');
+        }
+        num(10);
+
+
+        // 전역변수=a, 전역변수는 함수 내부에도 영향을 준다.
+        let a = 9;
+        document.write ('나는 ' + a + '번째 함수이다. <br>');
+
+        // 화살표함수
+        var num = (b,c) => {
+            document.write ('나는 ' + b + '번째 함수이다. <br>');
+            document.write ('나는 ' + c + '번째 함수이다. <br>');
+        }
+        num (1,2);
+
+        // 익명함수
+        var num = function (b,c) {
+            document.write ('나는 ' + b + '번째 함수이다. <br>');
+            document.write ('나는 ' + c + '번째 함수이다. <br>');
+        }
+        num (1,2);
+
+        var num = () => {
+            const b = 5;
+            const c = 6;
+            document.write ('나는 ' + b + '번째 함수이다. <br>');
+            document.write ('나는 ' + c + '번째 함수이다. <br>');
+        }
+        num (3,4);
+
+
+
+
+    </script>
+
+</body>
+
+</html>

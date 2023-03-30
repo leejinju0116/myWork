@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미디어쿼리</title>
+    <style>
+    /* 
+    @media [not|only] [mediatype] [and] [,] (조건식) { css-code; }
+
+    mediatype: screen, tv, print, projection, ....
+    and: 두개이상의 조건이 모두 만족할 경우 true
+    ,: 두개이상의 조건이 둘중 하나 만족할 경우 true
+    조건식: min-width(최소 가로크기), max-width(최대 가로크기)
+
+    breakpoint(중단점, 브레이크포인트) 설정: 설정을 많이할수록 장치에 맞는화면이됨
+    */
+
+        /* 
+        @media not screen  {css-code;} ->스크린을 제외하고
+        @media only screen  {css-code;} ->스크린만
+        */
+
+        /* 
+        @media (조건식) {css-code;}
+        @media (조건식) and (조건식) {css-code;}
+        @media (조건식), (조건식) {css-code;} ->잘안씀
+        */
+
+        /* 
+    @media (min-width:768) {css-code;} ->최소 768이므로, 768이상이라는 뜻
+    @media (min-width:768) and (max-width:992px) {css-code;} -> 최소768, 최대992이므로, 768이상 992이하라는 뜻
+    medium, lagrge 두가지만 해도 괜찮음
+    */
+
+
+    
+    /*  최대 576 -> 576이하: Extra Small, 지정안해도 됨, 생략가능  */
+    /* @media (max-width:576px) { css-code; } */
+
+    /*  최소 576 그리고 최대 768 -> 576이상 768이하: Small, max 생략가능  */
+    /* @media (min-width:576px) and (max-width:768px) { css-code; } */
+    /* @media (min-width:576px) { css-code; } */
+
+   /*  최소 768 그리고 최대 992 -> 768이상 992이하: Medium, max 생략가능  */
+    /* @media (min-width:768px) and (max-width:992px) { css-code; } */
+    /* @media (min-width:768px) { css-code; } */
+
+   /*  최소 992 그리고 최대 1200 -> 992이상 1200이하: Large, max 생략가능  */
+    /* @media (min-width:992px) and (max-width:1200px) { css-code; } */
+    /* @media (min-width:992px)  { css-code; } */
+
+
+    /* 중단점(breakpoint): 768, 1200 */
+    /* phone */
+    body {background: red;}
+
+    /* tablet */
+    @media (min-width:768px) {
+        body {background: green;}
+    }
+    /* desktop */
+    @media (min-width:1200px) {
+        body {background: blue;}
+    }
+
+    </style>
+</head>
+<body>
+    <h1>미디어쿼리</h1>
+
+</body>
+</html>

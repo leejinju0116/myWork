@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+</head>
+<body>
+    <h1>미디어</h1>
+    <h2>비디오</h2>
+    <!-- 소리를 꺼야 실행된다. -->
+    <video src="assets/school.mp4" height="200" autoplay muted loop></video>
+    <video height="200" autoplay muted loop controls>
+        <source src="assets/video.mp4" type="video/mp4">
+        <source src="assets/video.webm" type="video/webm">
+        <source src="assets/video.ogg" type="video/ogg">
+        당신의 브라우저는 video 태그를 지원하지 않습니다.
+    </video>
+
+    <h2>유튜브</h2>
+    <iframe src="https://www.youtube.com/embed/aqz-KE-bpKQ" ></iframe>
+
+
+
+    <h2>오디오</h2>
+    <!-- 배경음악 -->
+    <audio src="assets/I Love My Mom - Reed Mathis.mp3" height="200" autoplay loop></audio>
+    <audio height="200" controls>
+        <source src="assets/audio.mp3" type="audio/mp3">
+        <source src="assets/audio.wav" type="audio/wav">
+        <source src="assets/audio.ogg" type="audio/ogg">
+            당신의 브라우저는 audio 태그를 지원하지 않습니다.
+    </audio>
+
+    <audio autoplay loop>
+        <source src="assets/I Love My Mom - Reed Mathis.mp3" type="audio/mp3">
+        <source src="assets/I Love My Mom - Reed Mathis.wav" type="audio/wav">
+        <source src="assets/I Love My Mom - Reed Mathis.ogg" type="audio/ogg">
+            당신의 브라우저는 audio 태그를 지원하지 않습니다.
+    </audio>
+</body>
+</html>

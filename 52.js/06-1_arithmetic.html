@@ -24,18 +24,41 @@
 
         //변수의 선언 및 할당
         //변수의 선언은 맨위로!!
-        let i = 0;
-        document.write(i + '<br>')
-        i = i++;
-        document.write(i + '<br>')
-        i = ++i;
-        document.write(i + '<br>')
-        i = i--;
-        document.write(i + '<br>')
-        i = --i;
-        document.write(i + '<br>')
+        let i = 0; 
 
+        // 아래 3문장은 모두 1씩 증가하는 같은 문장이다. i=1
+        i++;
+        i += 1;
+        i = i + 1;
+        document.write('i=' + i + '<br>')
+        
 
+        // 아래 3문장은 모두 1씩 감소시키는 같은 문장이다.
+        i--;
+        i -= 1;
+        i = i - 1;
+        document.write('i=' + i + '<br>')
+
+        //곱하기
+        i = 5;
+        i = i * 5;
+        document.write('i=' + i + '<br>')
+        i = 'i' * 5;  //NaN= (Not a Number)이란 뜻
+        document.write('i=' + i + '<br>')
+
+        
+        // 연산자가 먼저오는경우: 계산후 할당
+        // ※연산자가 나중에 오는경우(많이쓰임): 할당후 계산(마지막순서에 마지막연산자는 계산하는데 포함안시킴)
+
+        // 오른쪽i++는 왼쪽i에 저장후 오른쪽i에 1증가 시킴
+        /*let a = i++ + i++; 
+        document.write('i=' + i + ', a=' + a + '<br>')
+        let b = ++i + ++i;   
+        document.write('i=' + i + ', b=' + b + '<br>')
+        let c = i-- + i--;
+        document.write('i=' + i + ', c=' + c + '<br>')
+        let d = --i + --i;
+        document.write('i=' + i + ', d=' + d + '<br>') */
 
 
         // 출력

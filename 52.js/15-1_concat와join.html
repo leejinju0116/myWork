@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+JS</title>
+</head>
+<body>
+    <h1>배열</h1>
+    <h2>concat과 join 매서드</h2>
+
+
+    <script>
+        // 배열생성
+        // 변수선언 1번째방법
+        const nums = [1, 2, 3];
+        // 변수선언 2번째방법 (1번째방법에서 살짝 바뀐) 
+        const chars = ['a','b','c'];
+
+        // 매서드
+        // 배열변수1.concat(배열변수2)
+        const numsChars = nums.concat(chars);
+        const charsNums = chars.concat(nums);
+
+
+        // 변수출력
+        document.write(nums + '<br>');
+        document.write(chars + '<br>');
+        console.log(nums);
+
+        // 변수출력(concat출력)(배열로 출력됨)
+        document.write(numsChars + '<br>');
+        document.write(charsNums + '<br>');
+
+
+
+
+
+        
+        // 배열.join(['구분자는 문자열로표기'])
+        const string = nums.join('');
+        const string2 = nums.join('/');
+        
+        // 출력(문자열로 출력됨)
+        document.write(string + '<br>');
+        document.write(string2 + '<br>');
+        console.log(string);
+
+    </script>
+</body>
+</html>

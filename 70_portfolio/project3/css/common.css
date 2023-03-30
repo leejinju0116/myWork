@@ -1,0 +1,127 @@
+@charset "utf-8";
+@import url(reset.css);
+@import url(typo.css);
+/* common(main.sub)공용 css파일 */
+
+/* test */
+/* body * {outline: 1px solid pink;} */
+
+
+/* --------------container-------------- */
+.container {
+    display: flex;
+}
+
+/* --------------header-------------- */
+header {
+    position: relative;
+    width: 200px;
+    height: 850px;
+    background: #FFE971;
+    padding: 20px;
+}
+
+/* 로고 */
+.logo {
+    text-align: center;
+    height: 100px;
+    padding: 30px 0 50px;
+}
+
+
+/* 내비게이션 */
+nav {
+    position: relative;
+    width: 160px;
+    height: 450px;
+    background: #FFE971;
+}
+
+/* 메인메뉴(1depth) */
+.main > li > a {
+    display: block;
+    border-bottom: 1px solid #333;
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 8px;
+}
+.main > li > a:hover {
+    background: #001E3C;
+    color: #fff;
+}
+
+.main > li:hover .sub {
+    opacity: 1;
+    height: 200px;
+    padding: 16px 0;
+}
+
+/* 서브메뉴(2depth) */
+.sub {
+    position: relative;
+    opacity: 0;
+    height: 0;
+    transition: height .3s ease-in;
+}
+
+/* 서브메뉴사이간격 */
+.sub li {
+    padding-left: 16px;
+    margin-bottom: 8px;
+}
+.sub li:first-child {padding-top: 16px;}
+
+/* 패딩적용확인하기.. */
+.sub a {
+    color: #777;
+    padding: 4px 16px;
+}
+
+.sub a:hover {
+    background: sandybrown;
+    color: #fff;
+}
+
+
+/* 로그인/회원가입 */
+.member {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    bottom: 320px;
+}
+
+/* --------------content-------------- */
+.content {
+    position: relative;
+    width: calc(100% - 200px);
+}
+
+/* --------------footer-------------- */
+footer {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    background: #061A37;
+}
+
+/* 하단로고 */
+.b_logo {
+    flex: 0 0 200px;
+    padding: 0 20px;
+}
+
+/* 주소/저작권 */
+.addr {
+    width: calc(100% - 500px);
+    padding: 0 50px;
+}
+
+/* sns */
+.sns {width: 300px;}
+
+.sns img {
+    width: 30px;
+    margin: 0 8px;
+}
